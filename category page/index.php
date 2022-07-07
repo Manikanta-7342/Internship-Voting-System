@@ -55,7 +55,7 @@
 									<span class="image">
 										<img src="<?php echo $row['img']; ?>" alt=""  />
 									</span>
-									<a href="try.php?myVar=<?php echo $row['category_id']; ?>" onclick="POST">
+									<a href="VideosPage/videos.php?myVar=<?php echo $row['category_id']; ?>" onclick="POST">
 										<h2><?php echo $row['category'];?></h2>
 										<!-- <div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
