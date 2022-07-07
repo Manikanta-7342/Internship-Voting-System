@@ -11,24 +11,7 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<!-- <div class="inner">
-
-							<!- Logo ->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a>
-
-							<!- Nav ->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
-						</div> -->
-						
-					</header>
+					
 
 
 				<!-- Main -->
@@ -38,7 +21,7 @@
 								
 								<h1>SIFF<br />
 								
-								 <a href="https://www.youngartiste.com">YOUNG ARTISITE</a>.</h1>
+								 <a href="https://www.youngartiste.com">YOUNG ARTISITE</a></h1>
 								<p>Select the required category to vote for in this voting contest.</p>
 							</header>
 							<section class="tiles">

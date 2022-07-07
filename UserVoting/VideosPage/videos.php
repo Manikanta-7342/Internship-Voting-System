@@ -20,7 +20,7 @@
 					<?php
                            require 'dbcon.php';
 						   $cat_id=$_REQUEST['myVar'];
-                           $query1 =mysqli_query($conn,"SELECT p.category, p.participant_video,p.participant_name,p.participant_id FROM participant p,category c where c.category_id=$cat_id and c.category=p.category");
+                           $query1 =mysqli_query($conn,"SELECT p.category FROM participant p,category c where c.category_id=$cat_id and c.category=p.category");
 						   $row1=mysqli_fetch_array($query1);
 						   ?>
 					<header id="header">
@@ -33,7 +33,7 @@
 							{ 
 							?>
 						<article class="thumb">
-							<iframe width="450px" height="225px" src="https://www.youtube.com/embed/m87B0ulgN64" ></iframe>
+							<iframe width="450px" height="245px" src="https://www.youtube.com/embed/m87B0ulgN64" ></iframe>
 							<h2>Participant Name:<?php echo $row['participant_name'];?></h2>
 							<!-- <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.<br/> -->
 							<a href="VideosPage/videos.php?myVar=<?php echo $row['participant_id']; ?>" onclick="POST">
