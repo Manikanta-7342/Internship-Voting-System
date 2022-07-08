@@ -31,12 +31,15 @@
 		$idno=$_POST['phone'];
 		//$password=$_POST['password'];
 	
-		$result = $conn->query("SELECT * FROM voters WHERE ph_no = '$idno' && status='Unvoted'")->num_rows ;
-	
-		
-
+		$result1 = $conn->query("SELECT * FROM voters WHERE ph_no = '$idno' && status='Unvoted'")or die(mysqli_errno()) ;
+    $row = $result1->fetch_array();
+		$result=$result1->num_rows;
+    session_start();
+    $_SESSION['voter_id'] = $row['voter_id'];
 		if($result == 1){
+     
             ?>
+          
             <script>
               document.getElementById('country').type="hidden";
               document.getElementById('log').type="hidden";

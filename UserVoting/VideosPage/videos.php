@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<?php include("sess.php");?>
 <html>
 	<head>
 		<title>Videos Page</title>
@@ -36,7 +37,7 @@
 							<iframe width="450px" height="245px" src="https://www.youtube.com/embed/m87B0ulgN64" ></iframe>
 							<h2>Participant Name:<?php echo $row['participant_name'];?></h2>
 							<!-- <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.<br/> -->
-							<a href="VideosPage/videos.php?myVar=<?php echo $row['participant_id']; ?>" onclick="POST">
+							<a href="ConfirmationPage/confirmation.php?myVar=<?php echo $row['participant_id']; ?>" onclick="POST">
 							<button type="button" name="VOTE" style="color:black; float: right;top:5px">VOTE</button></p>
 							</a>
 						</article>
