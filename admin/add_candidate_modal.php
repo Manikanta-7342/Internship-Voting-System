@@ -12,11 +12,17 @@
 
         <!-- Page Content -->
         <div id="page-wrapper">
-            <div class="row">
-				 <div class="col-lg-12">
-                    <h3 class="page-header">Add Participant</h3>
-					
-                </div> 
+		<hr />
+                
+				<div class="panel panel-default" style="border-color:white;">
+								<div class="panel-heading" style="margin-bottom:20px;margin-top:20px;">
+									<h4 class="modal-title" id="myModalLabel">         
+														<div class="panel panel-primary">
+															<div class="panel-heading" style="background-color:#de9d4d;border-color:#de9d4d;">
+																Add Participant
+															</div> 
+		</div> 
+		</div>
 				
 				
 				
@@ -29,7 +35,7 @@
 								<div class="modal-body">
 				<form onsubmit='sav()' method = "post" enctype = "multipart/form-data" >	
 					<div class="form-group">
-						<label>Select Category</label>
+						<label>Select Category:</label>
 						<select class = "form-control" name = "position" required>
 						<option selected disabled>Select Candidate Group</option>
 						<?php 
@@ -47,14 +53,14 @@
 					
                             </div>
 							<div class="form-group">
-						<label>Name</label>
+						<label>Name:</label>
 							<input class="form-control" type ="text" name = "firstname" placeholder="Please enter Name" required="true">
 					</div>
 							<div class="form-group">
-                        <label>Video</label>
+                        <label>Upload Video:</label>
 						<input type="file" name="image"required> 
                     </div>
-						<center><button name = "save" type="submit" class="btn btn-primary">Save Data</button></center>
+						<center><button name = "save" type="submit" class="btn btn-primary" style="background-color:#de9d4d;border-color:#de9d4d;">Save Data</button></center>
 				</form>  
 			</div>
             

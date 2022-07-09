@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom:0; background-color:#de9d4d;">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#" style = "color:white;"><i class = "fa fa-home fa-large" > </i>HOME | Admin Dashboard</a>
+                <a class="navbar-brand" href="#" style = "color:white;font-weight: bold;font-size:30px;"><i class = "fa fa-home fa-large" > </i>Admin Dashboard</a>
 				
             </div>
       

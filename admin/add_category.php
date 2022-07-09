@@ -10,16 +10,16 @@
 
         <!-- Page Content -->
         <div id="page-wrapper">
-            <div class="row">
-				 <div class="col-lg-12">
-                    <h3 class="page-header">Add Category</h3>
-					
-                </div> 
-				
-				
-				
-                    
-                            
+			<hr />
+		<div class="panel panel-default" style="border-color:white;">
+                        <div class="panel-heading" style="margin-bottom:20px;margin-top:20px;">
+                            <h4 class="modal-title" id="myModalLabel">         
+												<div class="panel panel-primary">
+													<div class="panel-heading" style="background-color:#de9d4d;border-color:#de9d4d;">
+														Add Category
+													</div>  
+</div>
+												</div>
                         <!-- /.panel-heading -->
                         
                            
@@ -31,14 +31,14 @@
 					
                             </div>
 							<div class="form-group">
-						<label>Category Name</label>
+						<label>Category Name:</label>
 							<input class="form-control" type ="text" name = "firstname" placeholder="Please enter Category Name" required=>
 					</div>
 							<div class="form-group">
-                        <label>Image</label>
-						<input type="file" name="image"required> 
+                        <label>Upload Image:</label>
+						<input type="file" name="file"required> 
                     </div>
-						<center><button name = "save" type="submit" class="btn btn-primary">Save Data</button></center>
+						<center><button name = "save" type="submit" class="btn btn-primary" style="background-color:#de9d4d;border-color:#de9d4d;">Save Data</button></center>
 				</form>  
 			</div>
             

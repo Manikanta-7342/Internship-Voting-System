@@ -4,8 +4,7 @@ body{
 	background-size: 100%;
 	color: rgb(23, 22, 22);
 }
-.page-head{
-}
+
 #wrapper{
 	background-color: white;
 	padding-bottom: 20px;
@@ -16,14 +15,12 @@ body{
 	border-width: thin;
 	border-radius: 5px;
 }
-.form-body{
-}
+
 .form-panel{
-	background-color:;
 	margin-left:auto;
 	margin-right: auto; 
 	border-radius: 10px;
-	padding-right:;
+
 }
 .form-heading{
 	font-weight: bold;
@@ -56,13 +53,11 @@ input{
 	text-align: center;
 }
 label{
-	font-style: italic;
 	font-size: large;
 	font-weight: bold;
 }
 button{
 	font-size: larger;
-	background-color: ;
 	cursor: pointer;
 	height: 40px;
 	border-style: solid;
@@ -76,9 +71,7 @@ button:hover{
 	color: white;
 }
 
-input:hover{
-	
-}
+
 .footer{
 	color: white;
 	text-align: center;
@@ -112,7 +105,7 @@ a:hover{
 .panel-nav{
 	font-size: 16px;
 }
-/*Dropdown menue*/
+/*Dropdown menu*/
 nav{
 	margin-top: -10px;
 	margin-left:auto;
@@ -144,10 +137,9 @@ nav ul li ul li{
 	padding-left: 5px;
 	list-style: none;
 }
-nav ul li ul:hover {
-}
+
 nav ul li a:hover{
-	color: white;
+	color: black;
 
 }
 nav ul li a{
@@ -159,5 +151,3 @@ select{
 .login-panel {
     margin-top: 10px;
 }
-
-
