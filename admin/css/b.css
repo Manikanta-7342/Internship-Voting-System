@@ -56,7 +56,6 @@ input{
 	text-align: center;
 }
 label{
-	font-style: italic;
 	font-size: large;
 	font-weight: bold;
 }
@@ -159,5 +158,3 @@ select{
 .login-panel {
     margin-top: 10px;
 }
-
-

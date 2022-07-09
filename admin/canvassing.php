@@ -18,12 +18,16 @@
 
 
                 <hr />
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="alert alert-success">Election Report</h4>
-                    </div>
-
+                
+		<div class="panel panel-default" style="border-color:white;">
+                        <div class="panel-heading" style="margin-bottom:20px;margin-top:20px;">
+                            <h4 class="modal-title" id="myModalLabel">         
+												<div class="panel panel-primary">
+													<div class="panel-heading" style="background-color:#de9d4d;border-color:#de9d4d;">
+														Election Report
+													</div> 
+</div> 
+</div>
                     <br />
                     <form method="post" action="sort.php">
 
@@ -50,8 +54,8 @@
 
                         &nbsp;
                         &nbsp;
-                        <button id="sort" class="btn btn-success">Sort</button><button type="button" onclick="window.print();" style="margin-right:14px;" id="print" class="pull-right btn btn-info"><i class="fa fa-print"></i> Print</button>
-                        <a href="excel.php"><button type="button" style="margin-right:14px;" id="print" class="pull-right btn btn-info"><i class="fa fa-print"></i>Export to Excel</button></a>
+                        <button id="sort" class="btn btn-success">Sort</button><button type="button" onclick="window.print();" style="margin-right:14px; background-color:#de9d4d;border-color:#de9d4d;" id="print" class="pull-right btn btn-info"><i class="fa fa-print"></i> Print</button>
+                        <a href="excel.php"><button type="button" style="margin-right:14px; background-color:#de9d4d;border-color:#de9d4d;" id="print" class="pull-right btn btn-info"><i class="fa fa-print"></i>Export to Excel</button></a>
 
                     </form>
                     <div class="panel-body">
