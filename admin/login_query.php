@@ -1,5 +1,5 @@
 <?php
-	require_once 'dbcon.php';
+	require_once '../DatabaseConnection/dbcon.php';
 	
 	if(isset($_POST['login']))
 	{
@@ -26,7 +26,7 @@
 						?>
 						<script type="text/javascript">
 						alert('Access Granted!');
-						window.location = 'candidate.php';
+						window.location = 'participant.php';
 						</script>
 						<?php
 					session_start();

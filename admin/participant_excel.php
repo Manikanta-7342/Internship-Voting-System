@@ -1,19 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
-//mysql and db connection
-
-$con = new mysqli($servername, $username, $password, $dbname);
-
-if ($con->connect_error) {  //error check
-    die("Connection failed: " . $con->connect_error);
-}
-else
-{
-
-}
+require '../DatabaseConnection/dbcon.php';
 
 $DB_TBLName = "participant"; 
 $filename = "participantVote.excelFile";  //your_file_name
@@ -27,7 +13,7 @@ header("Expires: 0");
 $sep = "\t";
 
 $sql="SELECT * FROM participant"; 
-$resultt = $con->query($sql);
+$resultt = $conn->query($sql);
 while ($property = mysqli_fetch_field($resultt)) { //fetch table field name
     echo $property->name."\t";
 }

@@ -6,10 +6,8 @@
 <body>
 
     <div id="wrapper">
-
         <!-- Navigation -->
         <?php include ('side_bar.php');?>
-
         <!-- Page Content -->
         <div id="page-wrapper">
 		<hr />
@@ -23,23 +21,15 @@
 															</div> 
 		</div> 
 		</div>
-				
-				
-				
-                    
-                            
-                        <!-- /.panel-heading -->
-                        
-                           
-                                
-								<div class="modal-body">
+			
+			<div class="modal-body">
 				<form onsubmit='sav()' method = "post" enctype = "multipart/form-data" >	
 					<div class="form-group">
 						<label>Select Category:</label>
 						<select class = "form-control" name = "position" required>
-						<option selected disabled>Select Candidate Group</option>
+						<option selected disabled>Select Category Group</option>
 						<?php 
-											require 'dbcon.php';
+											require '../DatabaseConnection/dbcon.php';
 											$bool = false;
 											$query = $conn->query("SELECT * FROM category ORDER BY category_id DESC");
 												 while($row = $query->fetch_array()){
@@ -57,8 +47,8 @@
 							<input class="form-control" type ="text" name = "firstname" placeholder="Please enter Name" required="true">
 					</div>
 							<div class="form-group">
-                        <label>Upload Video:</label>
-						<input type="file" name="image"required> 
+                        <label>Provide Video Link Key:</label>
+						<input class="form-control" type="text" name="video" placeholder="Eg:- https://www.youtube.com/watch?v=(KEY)" required> 
                     </div>
 						<center><button name = "save" type="submit" class="btn btn-primary" style="background-color:#de9d4d;border-color:#de9d4d;">Save Data</button></center>
 				</form>  
@@ -66,26 +56,16 @@
             
                             <!-- /.table-responsive -->
 							<?php 
-				require_once 'dbcon.php';
+				require_once '../DatabaseConnection/dbcon.php';
 				
 				if (isset ($_POST ['save'])){
 					$position=$_POST['position'];		
 								
-					
 					$firstname=$_POST['firstname'];
-					//$lastname=$_POST['lastname'];
-					//$age=$_POST['Age'];
-					//$gender=$_POST['gender'];
-					$image= addslashes(file_get_contents($_FILES['image']['tmp_name']));
-					$image_name= addslashes($_FILES['image']['name']);
-					$image_size= getimagesize($_FILES['image']['tmp_name']);
-		
-					move_uploaded_file($_FILES["image"]["tmp_name"],"upload/" . $_FILES["image"]["name"]);			
-					$location="upload/" . $_FILES["image"]["name"];
 					
+					$video= $_POST['video'];
 					
-					
-					$conn->query("INSERT INTO participant(category,participant_name,participant_video)values('$position','$firstname','$location')")or die($conn->error);
+					$conn->query("INSERT INTO participant(category,participant_name,participant_video)values('$position','$firstname','$video')")or die($conn->error);
 				}						
 			?>	
                             
@@ -93,7 +73,6 @@
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
-              
             </div>
             <!-- /.row -->
         </div>
@@ -107,7 +86,7 @@
     <script>
 	function sav(){
 		alert("Successfully saved");
-		window.location='candidate.php';
+		window.location='participant.php';
 	}
 	</script>
 

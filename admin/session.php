@@ -1,5 +1,5 @@
 <?php
-	require 'dbcon.php';
+	require '../DatabaseConnection/dbcon.php';
 	session_start(); 
 	
 	//Check whether the session variable SESS_MEMBER_ID is present or not

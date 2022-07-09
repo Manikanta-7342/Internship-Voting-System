@@ -21,9 +21,6 @@
 </div>
 												</div>
                         <!-- /.panel-heading -->
-                        
-                           
-                                
 								<div class="modal-body">
 				<form onsubmit="sav()"  method = "post" enctype = "multipart/form-data" >	
 					<div class="form-group">
@@ -44,11 +41,10 @@
             
                             <!-- /.table-responsive -->
 							<?php 
-				require_once 'dbcon.php';
+				require_once '../DatabaseConnection/dbcon.php';
 				
 				if (isset ($_POST ['save'])){
 					$category=$_POST['firstname'];					
-					
 					
 					$image= addslashes(file_get_contents($_FILES['image']['tmp_name']));
 					$image_name= addslashes($_FILES['image']['name']);
@@ -60,8 +56,7 @@
 					
 					$conn->query("INSERT INTO category(category,img)values('$category','$location')")or die($conn->error);
 				}						
-			?>		
-                            
+			?>		     
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -71,15 +66,12 @@
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
-
-
-
     </div>
     <!-- /#wrapper -->
 <script>
 	function sav(){
 		alert("Successfully saved");
-		window.location='candidate.php';
+		window.location='participant.php';
 	}
 	</script>
     

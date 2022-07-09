@@ -36,7 +36,7 @@
 							{ 
 							?>
 						<article class="thumb">
-							<iframe width="450px" height="245px" src="https://www.youtube.com/embed/m87B0ulgN64" ></iframe>
+							<iframe width="450px" height="245px" src="https://www.youtube.com/embed/<?php echo $row['participant_video']?>" ></iframe>
 							<h2>Participant Name:<?php echo $row['participant_name'];?></h2>
 							<!-- <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.<br/> -->
 							<a href="../ConfirmationPage/confirmation.php?myVar=<?php echo $row['participant_id']; ?>" onclick="POST">

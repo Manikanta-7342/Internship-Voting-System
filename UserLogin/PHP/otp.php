@@ -53,7 +53,7 @@ if(ISSET($_SESSION['ph_no'])){
            <?php }
             else
             {
-                echo "<script type='text/javascript'>alert('Sorry, OTP entered was incorrect. Please enter correct OTP');  window.location='otp.php';  </script>";
+                echo "<script type='text/javascript'>alert('Sorry, OTP entered was incorrect.We have sent it again. Please enter correct OTP');  window.location='otp.php';  </script>";
                 die();
             }
         
@@ -70,7 +70,7 @@ if(ISSET($_SESSION['ph_no'])){
   }
   else{?>
   <script>
-    window.location='index.php';
+    window.location='../../index.php';
     </script>
     <?php }?>
 

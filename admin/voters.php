@@ -3,10 +3,8 @@
 
 <body>
     <div id="wrapper">
-
         <!-- Navigation -->
         <?php include ('side_bar.php');?>
-
         <!-- Page Content -->
         <hr/>
         <div id="page-wrapper">
@@ -17,7 +15,7 @@
 													<div class="panel-heading" style="background-color:#de9d4d;border-color:#de9d4d">
 														Voters List
 													</div>  
-</div>
+        </div>
 												</div>
 				<?php 
 					$count = $conn->query("SELECT COUNT(*) as total FROM `voters`")->fetch_array();
@@ -31,17 +29,10 @@
 				<button><i class = "fa fa-paw"></i> Unvoted(<?php echo $count2['total']?>) </button>
                 <button><i class = "fa fa-paw"></i> Males(<?php echo $count3['total']?>)</button>
                 <button><i class = "fa fa-paw"></i> Females(<?php echo $count4['total']?>)</button>
-                 <a href="voters_excel.php"><button type="button" style = "margin-right:14px; background-color:#de9d4d;border-color:#de9d4d;" id ="print" class = "pull-right btn btn-info"><i class = "fa fa-print"></i>Export Voters to Excel</button></a>
+                 <a href="voters_excel.php"><button type="button" style = "margin-right:14px; background-color:#de9d4d;border-color:#de9d4d;" id ="print" class = "pull-right btn btn-info"><i class = "fa fa-print"></i>Export to Excel</button></a>
                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				
-				<!-- <a  href = "activate_accounts.php"class = "btn btn-danger btn-outline pull-right" style = "margin-right:12px;" name = "go"><i>Activate Voter Accounts</i> </a>
-				<a  href = "deactivate_accounts.php"class = "btn btn-danger btn-outline pull-right" style = "margin-right:12px;" name = "go"><i>Deactivate Voter Accounts</i> </a> -->
-                
 				<br />
 				<br />
-				
-				
-				
                     <div class="panel panel-default">
                     
                         <!-- /.panel-heading -->
@@ -57,13 +48,11 @@
                                             <th>Category</th>
                                             <th>Status</th>
                                             <th>Contact Number</th>
-                                            
-                                            
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php 
-                                            require 'dbcon.php';
+                                            require '../DatabaseConnection/dbcon.php';
                                             
                                             $query = $conn->query("SELECT * FROM voters ORDER BY voter_id DESC");
                                             while($row1 = $query->fetch_array()){
@@ -104,13 +93,8 @@
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
-
-
-
     </div>
     <!-- /#wrapper -->
-
-    <?php include ('script.php');?>
 
 </body>
 
