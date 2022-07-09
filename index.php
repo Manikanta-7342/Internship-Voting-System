@@ -28,7 +28,7 @@
 
 
       <?php
-	require 'admin/dbcon.php';
+	require 'DatabaseConnection/dbcon.php';
 	
 	if(isset($_POST['login'])){
 		$idno=$_POST['phone'];
