@@ -1,3 +1,4 @@
+
 <?php
 	include("../dbcon.php");
   session_start();
@@ -46,7 +47,7 @@
                $query1 =mysqli_query($conn,"SELECT p.participant_name,p.category FROM participant p where p.participant_id=$cat_id");
 						   $row1=mysqli_fetch_array($query1); ?>
      <p class="fadeIn fourth">Your vote has been confirmed...<br>
-       You have voted to <strong><?php echo $row1 ['participant_name']; ?></strong> in <?php echo $row1 ['category']; ?>
+       You have voted to <strong><?php echo $row1 ['participant_name']; ?></strong> in <strong><?php echo $row1 ['category']; ?></strong>
      </p> 
     </div>
     

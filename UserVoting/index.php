@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<?php include("VideosPage/sess.php");?>
 <html>
 	<head>
 		<title>Categories</title>
