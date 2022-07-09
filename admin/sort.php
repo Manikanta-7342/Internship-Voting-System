@@ -32,16 +32,14 @@
 									require 'dbcon.php';
 									
 									$position = $_POST['position'];
-									$sort = $position;
-									$query = $conn->query("SELECT * FROM participant WHERE category = '$sort'");
-									$fetch = $query->fetch_array();
-									{
-										
+									//$sort = $position;
+									$query = $conn->query("SELECT * FROM category WHERE category = '$position'");
+									$row = $query->fetch_array();	
 										
 								?>
 					<div class="panel-heading">
-							<center><?php echo $fetch ['category'];?>
-								<?php }?>
+							<center><?php echo $row['category'];?>
+								<?php ?>
 								
 					</div>  </center>  
 									
@@ -68,6 +66,11 @@
 		$query = $conn->query("SELECT * FROM participant WHERE category = '$sort'");
 		while($fetch = $query->fetch_array())
 		{
+			if($fetch==NULL)
+			{ ?>
+				<p>No participants to display</p>
+		<?php	}
+			else{
 			$id = $fetch['participant_id'];
 			$query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE participant_id = '$id'");
 			$fetch1 = $query1->fetch_assoc();
@@ -78,7 +81,7 @@
 						<!-- <td><img src = "<//?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " > -->
 						<td></td>
 						<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
-					<?php }?>
+					<?php }}?>
 					</tbody>
 					
 					

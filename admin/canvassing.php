@@ -66,7 +66,7 @@
 													$category=$row['category'];
                                 ?>
                     <thead>
-                                <td style="width:600px;" class="alert alert-success">Candidate for <?php echo $row ['category'];?>  </td>
+                                <td style="width:600px;" class="alert alert-success">Candidates for <?php echo $row ['category'];?>  </td>
                                 <!-- <td style="width:200px;" class="alert alert-success">Image</td> -->
                                 <td class="alert alert-success">Total</td>
     </thead>        
