@@ -24,21 +24,24 @@
    
     <div class="wrapper fadeInDown">
   <div id="formContent">
-    
+    <br>
+    <br>
     <!-- Tabs Titles -->
     <!-- <h2 class="active"> Home </h2>
   <a href=""><h2 class="inactive underlineHover">Category </h2></a> -->
 
     <!-- Icon -->
+    <div class="back" >
+      <img class="fadeIn third" class="responsive" src="images/template.jfif" alt="guitar">
+    </div>
     <div class="fadeIn first">
       <!-- <img src="https://www.youngartiste.com/assets/img/young-artiste-logo-white.png" id="icon" alt="User Icon" />
        -->
-       <div class="circle"><i class="fa-solid fa-check fa-5x"></i></div>
-       
+       <!-- <div class="circle"><i  class="responsive" class="fa-solid fa-check fa-5x"></i></div> -->
+       <img src="images/3.png" alt="tick" width="100px" height="100px">
+
     </div>
-    <div class="back" >
-      <img class="fadeIn third" src="images/template.jfif" alt="guitar">
-    </div>
+    
     <div class="container">
       <h3 class="fadeIn second" >Congratulations</h3>
       <?php
@@ -49,6 +52,9 @@
      <p class="fadeIn fourth">Your vote has been confirmed...<br>
        You have voted to <strong><?php echo $row1 ['participant_name']; ?></strong> in <strong><?php echo $row1 ['category']; ?></strong>
      </p> 
+    </div>
+    <div class="back" >
+      <img class="fadeIn third" src="images/template.jfif" alt="guitar">
     </div>
     
 

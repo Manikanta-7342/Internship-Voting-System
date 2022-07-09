@@ -13,17 +13,25 @@ body {
 .circle{
   height: 100px;
   width: 100px;
-  background-color: rgb(0, 0, 0);
+  background-color: #198754;
   border-radius: 50%;
  align-items: center;
  margin-left: 170px;
- padding-top: px;
+ text-align: center;
+ position: static;
+
+ padding: 10px;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
 .fa-solid{
   padding-top: 10px;
+    background-color: white;
 }
 .first{
-  padding-top: 20px;
+  padding-top: 10px;
   /* padding-bottom: 20px; */
 }
 /* .bac{
