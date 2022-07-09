@@ -2,9 +2,7 @@
 <?php include ('head.php');?>
 
 <body>
-
     <div id="wrapper">
-
         <!-- Navigation -->
         <?php include ('side_bar.php');?>
 
