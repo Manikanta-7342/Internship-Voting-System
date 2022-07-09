@@ -2,7 +2,7 @@
 
 
 <?php include ('head.php');?>
-
+<?php include ('session.php');?>
 <body>
 
     <div id="wrapper">
