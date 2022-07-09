@@ -34,7 +34,7 @@
       <!-- <input type="submit" id="sendOTP" class="fadeIn fourth" name="login" value="send OTP" /> -->
       <!-- <label for = "username" >Password</label> -->
     <!-- <input class="form-control" placeholder="Enter Password" name="password" type="password" value=""> -->
-    <input type="text" class="fadeIn second" name="password" placeholder="Enter Password" value="">
+    <input type="password" class="fadeIn second" name="password" placeholder="Enter Password" value="">
       <input type="submit" id="log" name='login' class="fadeIn fourth" value="Login">
       <?php include ('login_query.php');?>
 			

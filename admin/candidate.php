@@ -51,7 +51,7 @@
                                          
                                             
                                             <!-- <th>Image</th> -->
-                                            <th>category</th>
+                                            <th>Category</th>
                                             <!-- <th>Party</th> -->
                                             <th>Name</th>
                                             <!-- <th>Lastname</th>
