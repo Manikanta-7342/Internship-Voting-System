@@ -25,7 +25,7 @@
 					{
 						?>
 						<script type="text/javascript">
-						alert('WelCome!');
+						alert('Access Granted!');
 						window.location = 'candidate.php';
 						</script>
 						<?php

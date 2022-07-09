@@ -3682,8 +3682,8 @@ fieldset[disabled] .btn-success.active {
 
 .btn-info {
 	color: #fff;
-	background-color: #5bc0de;
-	border-color: #46b8da
+	background-color: #de9d4d;
+	border-color: #de9d4d;
 }
 
 .btn-info:hover,
@@ -6201,7 +6201,7 @@ a.list-group-item-danger.active:focus {
 }
 
 .panel {
-	margin-bottom: 1000px;
+	margin-bottom: 3px;
 	background-color: #fff;
 	border: 1px solid transparent;
 	border-radius: 4px;
@@ -6442,7 +6442,6 @@ a.list-group-item-danger.active:focus {
 .panel-default>.panel-heading {
 	color: #333;
 	background-color: #f5f5f5;
-	border-color: #ddd
 }
 
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
