@@ -35,9 +35,7 @@
       <img class="fadeIn third" class="responsive" src="images/template.jfif" alt="guitar">
     </div>
     <div class="fadeIn first">
-      <!-- <img src="https://www.youngartiste.com/assets/img/young-artiste-logo-white.png" id="icon" alt="User Icon" />
-       -->
-       <!-- <div class="circle"><i  class="responsive" class="fa-solid fa-check fa-5x"></i></div> -->
+      
        <img src="images/3.png" alt="tick" width="100px" height="100px">
 
     </div>
@@ -54,15 +52,6 @@
      </p> 
     </div>
 
-    <!-- Login Form -->
-    <!-- <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="mobile number">
-      <input type="button" id="sendOTP" class="fadeIn fourth" name="login" value="send OTP" />
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="otp">
-      <input type="submit" class="fadeIn fourth" value="Log In">
-    </form> -->
-
-    <!-- Remind Passowrd -->
     <div id="formFooter">
       <a class="underlineHover" href="https://www.youngartiste.com/">@youngartiste2022</a>
     </div>
