@@ -53,20 +53,11 @@
 							</section>
 						</div>
 					</div>
-
-				<!-- Footer -->
-					
 			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-				function page()
-				{
-					window.location='try.php';
-				}
-				</script>
 	</body>
 </html>
