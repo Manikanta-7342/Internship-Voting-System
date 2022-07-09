@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<?php include("VideosPage/sess.php");?>
+
 <html>
 	<head>
 		<title>Categories</title>
@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	<?php include("../VideosPage/sess.php")?>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -27,7 +28,7 @@
 							</header>
 							<section class="tiles">
 							<?php
-                           require 'dbcon.php';
+                           require '../DatabaseConnection/dbcon.php';
 						   
                            $query =mysqli_query($conn,"SELECT * FROM category");
 							while($row=mysqli_fetch_array($query))
@@ -39,7 +40,7 @@
 									<span class="image">
 										<img src="<?php echo $row['img']; ?>" alt=""  />
 									</span>
-									<a href="VideosPage/videos.php?myVar=<?php echo $row['category_id']; ?>" onclick="POST">
+									<a href="../VideosPage/videos.php?myVar=<?php echo $row['category_id']; ?>" onclick="POST">
 										<h2><?php echo $row['category'];?></h2>
 										<!-- <div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>

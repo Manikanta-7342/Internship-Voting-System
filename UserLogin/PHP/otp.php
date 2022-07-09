@@ -1,9 +1,11 @@
 <?php
 
 //$name= $_POST['name'];
-//$email= $_POST['email'];
-$mobile= $_REQUEST['myVar'];
+session_start(); 
+//$mobile= $_REQUEST['myVar'];
+if(ISSET($_SESSION['ph_no'])){ 
 
+  $mobile=$_SESSION['ph_no'];
     #### 2Factor API Setting
     $APIKey='ebc541c3-ff47-11ec-9c12-0200cd936042';
     $OTPMessage="<p>We have sent an OTP to $mobile,<br>Please enter the same below</p>";
@@ -41,9 +43,9 @@ $mobile= $_REQUEST['myVar'];
             if ( $VerificationStatus =='OTP Matched')
             {?>
                 <script>
-                alert("Sucessfullly <?php echo $mobile;?> Verified");
+                alert("Sucessfullly Verified");
                 
-                window.location="http://localhost/Internship-Voting-System/UserVoting/index.php";
+                window.location="../../UserVoting/category.php";
             
                 
                 
@@ -51,7 +53,7 @@ $mobile= $_REQUEST['myVar'];
            <?php }
             else
             {
-                echo "<script type='text/javascript'>alert('Sorry, OTP entered was incorrect. Please enter correct OTP');  window.history.back();  </script>";
+                echo "<script type='text/javascript'>alert('Sorry, OTP entered was incorrect. Please enter correct OTP');  window.location='otp.php';  </script>";
                 die();
             }
         
@@ -65,7 +67,12 @@ $mobile= $_REQUEST['myVar'];
             
     }
 
-?>
+  }
+  else{?>
+  <script>
+    window.location='index.php';
+    </script>
+    <?php }?>
 
 
 

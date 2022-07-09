@@ -1,12 +1,12 @@
 
 <?php
-	include("../dbcon.php");
+	include("../DatabaseConnection/dbcon.php");
   session_start();
 	session_destroy();
   $participant_id=$_REQUEST['myVar'];
 		$conn->query("INSERT INTO `votes` VALUES('', $participant_id, '$_SESSION[voter_id]')") or die($conn->error);
 		$conn->query("UPDATE `voters` SET `status` = 'Voted' WHERE `voter_id` = '$_SESSION[voter_id]'") or die($conn->error);
-		
+		unset($_SESSION);
 		
 ?> 
 
@@ -15,9 +15,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/d7741372ca.js" crossorigin="anonymous"></script>
-    <title>confirmation page</title>
+    <title>Confirmation page</title>
   </head>
   <body>
     <!-- <div class="logo" style="width:10px"> <img src="images/simplelogo.jfif" alt="logoof siff"></div> -->
@@ -45,7 +45,7 @@
     <div class="container">
       <h3 class="fadeIn second" >Congratulations</h3>
       <?php
-                           require '../dbcon.php';
+                           require '../DatabaseConnection/dbcon.php';
 						   $cat_id=$_REQUEST['myVar'];
                $query1 =mysqli_query($conn,"SELECT p.participant_name,p.category FROM participant p where p.participant_id=$cat_id");
 						   $row1=mysqli_fetch_array($query1); ?>
@@ -53,10 +53,6 @@
        You have voted to <strong><?php echo $row1 ['participant_name']; ?></strong> in <strong><?php echo $row1 ['category']; ?></strong>
      </p> 
     </div>
-    <div class="back" >
-      <img class="fadeIn third" src="images/template.jfif" alt="guitar">
-    </div>
-    
 
     <!-- Login Form -->
     <!-- <form>
@@ -68,7 +64,7 @@
 
     <!-- Remind Passowrd -->
     <div id="formFooter">
-      <a class="underlineHover" href="#">@youngartiste2022</a>
+      <a class="underlineHover" href="https://www.youngartiste.com/">@youngartiste2022</a>
     </div>
 
   </div>

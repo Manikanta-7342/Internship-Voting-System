@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="UserLogin/CSS/index.css">
     <title>login page</title>
   </head>
   <body>
@@ -11,7 +11,7 @@
   <div id="formContent">
     <!-- Tabs Titles -->
     <h2 class="active"> Sign In </h2>
-  <a href="signup.php"><h2 class="inactive underlineHover">Register To Vote </h2></a>
+  <a href="UserLogin/PHP/signup.php"><h2 class="inactive underlineHover">Register To Vote </h2></a>
 
     <!-- Icon -->
     <div class="fadeIn first">
@@ -28,7 +28,7 @@
 
 
       <?php
-	require 'dbcon.php';
+	require 'admin/dbcon.php';
 	
 	if(isset($_POST['login'])){
 		$idno=$_POST['phone'];
@@ -40,9 +40,10 @@
 		$numberOfRows = $result->num_rows;
     if ($numberOfRows > 0){
 			session_start();
-			$_SESSION['voter_id'] = $row['voter_id']; ?>
+			$_SESSION['voter_id'] = $row['voter_id'];
+      $_SESSION['ph_no']=$row['ph_no'] ?>
       <script>
-        window.location='otp.php?myVar=<?php echo $row['ph_no']?>';
+        window.location='UserLogin/PHP/otp.php';
         </script>
 
 	<?php	}
@@ -56,7 +57,8 @@
       }else{
         ?>
         <script type="text/javascript">
-        alert('Your account is not registered');
+        alert('Your account is not registered.So,please Register to vote');
+        window.location='UserLogin/PHP/signup.php';
         </script>
         <?php
       }
