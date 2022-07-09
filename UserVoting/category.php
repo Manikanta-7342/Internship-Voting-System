@@ -11,18 +11,11 @@
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
-
-				<!-- Header -->
-					
-
-
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
 							<header>
-								
 								<h1>SIFF<br />
-								
 								 <a href="https://www.youngartiste.com">YOUNG ARTISITE</a></h1>
 								<p>Select the required category to vote for in this voting contest.</p>
 							</header>
@@ -34,20 +27,15 @@
 							while($row=mysqli_fetch_array($query))
 							{ 
 							?>
-							
-								<article class="style1" value=""   >
+								<article class="style1">
 								
 									<span class="image">
 										<img src="<?php echo $row['img']; ?>" alt=""  />
 									</span>
 									<a href="../VideosPage/videos.php?myVar=<?php echo $row['category_id']; ?>" onclick="POST">
 										<h2><?php echo $row['category'];?></h2>
-										<!-- <div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div> -->
+										
 							</a>
-							
-							
 								</article>
 							<?php } ?>
 							</section>
