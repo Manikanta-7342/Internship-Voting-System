@@ -1,5 +1,5 @@
 <?php
-	require 'dbcon.php';
+	require '../DatabaseConnection/dbcon.php';
 	session_start(); 
 	
 	if(!ISSET($_SESSION['voter_id'])){ ?>

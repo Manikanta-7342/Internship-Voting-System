@@ -44,20 +44,9 @@
 							</a>
 						</article>
 						<?php } ?>
-						<!-- <article class="thumb">
-							<a href="https://www.youtube.com/watch?v=cRfI3UzHf7E" class="image"><img src="https://www.youtube.com/watch?v=cRfI3UzHf7E" alt="" /></a>
-							<h2>Name: </h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.<br/>
-							<button type="button" name="VOTE" style="color:black; position: relative;top:15px;">VOTE</button></p>
-						</article>
-						 -->
 					</div>
 
-				<!-- Footer -->
-					
-
 			</div>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
