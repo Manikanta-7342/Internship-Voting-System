@@ -18,7 +18,7 @@
                 </div>
 				
 				
-				<?php include ('add_candidate_modal.php');?>
+				
                 <!-- /.col-lg-12 -->
 				
 				
