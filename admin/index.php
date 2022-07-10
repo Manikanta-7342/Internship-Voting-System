@@ -20,7 +20,7 @@
   <div id="formContent">
     <!-- Tabs Titles -->
    
-
+<br>
     <!-- Icon -->
     <div class="fadeIn first">
       <img src="https://www.youngartiste.com/assets/img/young-artiste-logo-white.png" id="icon" alt="User Icon" />
