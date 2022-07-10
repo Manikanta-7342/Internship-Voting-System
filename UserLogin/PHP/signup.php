@@ -10,7 +10,7 @@
     <div class="wrapper fadeInDown">
         <div id="formContent">
         
-        <a href="index.php"><h2 class="inactive underlineHover">Sign In </h2></a>
+        <a href="../../index.php"><h2 class="inactive underlineHover">Sign In </h2></a>
 
           <!-- Tabs Titles -->
           <!-- <a href="index.html"><h2 class="inactive underlineHover"> Sign In </h2></a> -->
