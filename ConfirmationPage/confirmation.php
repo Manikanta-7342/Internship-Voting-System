@@ -3,6 +3,10 @@
 	include("../DatabaseConnection/dbcon.php");
   session_start();
 	session_destroy();
+    if(!ISSET($_SESSION['voter_id']))
+    { ?>
+      <script>alert("Sorry You have already Voted");window.location='../index.php'</script>
+  <?php  }
   $participant_id=$_REQUEST['myVar'];
 		$conn->query("INSERT INTO `votes` VALUES('', $participant_id, '$_SESSION[voter_id]')") or die($conn->error);
 		$conn->query("UPDATE `voters` SET `status` = 'Voted' WHERE `voter_id` = '$_SESSION[voter_id]'") or die($conn->error);

@@ -13,16 +13,22 @@
 	
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Header -->
-					
-
 				<!-- Main -->
 					<div id="main">
 					<?php
                            require '../DatabaseConnection/dbcon.php';
-						   $cat_id=$_REQUEST['myVar'];
-                           $query1 =mysqli_query($conn,"SELECT category FROM category where category_id=$cat_id ") or die ($conn->error);
+						 	
+							   if(!ISSET($_REQUEST['myVar']))
+							   { ?>
+								   <script>window.location='../UserVoting/category.php';</script>
+							<?php   }
+							   else
+							   {
+								   $_SESSION['category_id'] = $_REQUEST['myVar'];
+							   }
+						   $cat_id=$_SESSION['category_id'];
+                           $query1 =mysqli_query($conn,"SELECT category FROM `category` where `category_id`='$cat_id' ") or die ($conn->error);
 						   $row1=mysqli_fetch_array($query1);
 
 						   ?>
@@ -31,17 +37,19 @@
 						
 					</header> 
 					<?php
-                          $query =mysqli_query($conn,"SELECT p.category, p.participant_video,p.participant_name,p.participant_id FROM participant p,category c where c.category_id=$cat_id and c.category=p.category") ;
+                          $query =mysqli_query($conn,"SELECT p.category, p.participant_video,p.participant_name,p.participant_id FROM participant p,category c where c.category_id= '$cat_id' and c.category=p.category") ;
 							while($row=mysqli_fetch_array($query))
 							{ 
 							?>
+							
 						<article class="thumb">
 							<iframe width="450px" height="245px" src="https://www.youtube.com/embed/<?php echo $row['participant_video']?>" ></iframe>
 							<h2>Participant Name:<?php echo $row['participant_name'];?></h2>
 							<!-- <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.<br/> -->
-							<a href="../ConfirmationPage/confirmation.php?myVar=<?php echo $row['participant_id']; ?>" onclick="POST">
-							<button type="button" name="VOTE" style="color:black; float: right;top:5px">VOTE</button></p>
-							</a>
+							<form method="POST" action="vote_confirmation.php">
+							
+							<button type="submit" value="<?php echo $row['participant_id']; ?>" name="submit" style="color:black; float: right;top:5px">VOTE</button></p>
+							</form>
 						</article>
 						<?php } ?>
 					</div>

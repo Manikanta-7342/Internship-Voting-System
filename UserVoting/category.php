@@ -32,9 +32,10 @@
 									<span class="image">
 										<img src="<?php echo $row['img']; ?>" alt=""  />
 									</span>
+									
 									<a href="../VideosPage/videos.php?myVar=<?php echo $row['category_id']; ?>" onclick="POST">
+									
 										<h2><?php echo $row['category'];?></h2>
-										
 							</a>
 								</article>
 							<?php } ?>

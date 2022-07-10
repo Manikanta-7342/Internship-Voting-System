@@ -3,7 +3,7 @@
 	session_start(); 
 	
 	if(!ISSET($_SESSION['voter_id'])){ ?>
-		<script>window.location='../UserLogin/PHP/';</script>
+		<script>window.location='../index.php';</script>
 <?php	}else{
 		$session_id=$_SESSION['voter_id'];
 		$user_query = $conn->query("SELECT * FROM voters WHERE voter_id = '$session_id'") or die(mysqli_errno());
