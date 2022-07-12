@@ -43,12 +43,12 @@
 							?>
 							
 						<article class="thumb">
-							<iframe width="450px" height="245px" src="https://www.youtube.com/embed/<?php echo $row['participant_video']?>" ></iframe>
-							<h2>Participant Name:<?php echo $row['participant_name'];?></h2>
+							<iframe width="100%" height="80%" src="https://www.youtube.com/embed/<?php echo $row['participant_video']?>" ></iframe>
+							<h2 style="font-family:sans-serif; position:relative; top:10px;">Participant Name:<?php echo $row['participant_name'];?></h2>
 							<!-- <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.<br/> -->
 							<form method="POST" action="vote_confirmation.php">
 							
-							<button type="submit" value="<?php echo $row['participant_id']; ?>" name="submit" style="color:black; float: right;top:5px">VOTE</button></p>
+							<button type="submit" value="<?php echo $row['participant_id']; ?>" name="submit" style="color:black; position:relative; left: 70%; bottom:15px;">VOTE</button></p>
 							</form>
 						</article>
 						<?php } ?>
