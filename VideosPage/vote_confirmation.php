@@ -14,7 +14,7 @@
   <div id="formContent">
     <br>
     <div class="container">
-      <h3 class="fadeIn second" >Confirmation Your Vote</h3>
+      <h3 class="fadeIn second" >Confirm Your Vote</h3>
       <?php
                            require '../DatabaseConnection/dbcon.php';
                        if(!ISSET($_POST['submit']))
