@@ -36,10 +36,14 @@
 
     <!-- Icon -->
     <div class="back" >
-      <img class="fadeIn third" class="responsive" src="images/template.jfif" alt="guitar">
-    </div>
+      <!-- <img class="fadeIn third" class="responsive" src="images/template.jfif" alt="guitar">
+    </div> -->
     <div class="fadeIn first">
       
+    <img src="https://www.youngartiste.com/assets/img/young-artiste-logo-white.png" id="icon" alt="User Icon" />
+
+    </div>
+    <div class="first fadeIn third">
        <img src="images/3.png" alt="tick" width="100px" height="100px">
 
     </div>

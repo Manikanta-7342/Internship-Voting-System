@@ -111,7 +111,9 @@ h2 {
   margin: 40px 8px 10px 8px;
   color: #cccccc;
 }
-
+.logo{
+  position: absolute;
+}
 
 
 /* STRUCTURE */
@@ -143,7 +145,7 @@ h2 {
 #formFooter {
   background-color: #f6f6f6;
   border-top: 1px solid #dce8f1;
-  padding: 25px;
+  padding: 25px 0;
   text-align: center;
   -webkit-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
