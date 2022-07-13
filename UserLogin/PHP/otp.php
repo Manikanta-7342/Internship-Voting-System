@@ -85,7 +85,10 @@ if(ISSET($_SESSION['ph_no'])){
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
     <title>otp</title>
+    
+    <!-- <link rel="icon" type="image/x-icon" href=""> -->
   </head>
   <body>
     <div class="wrapper fadeInDown">

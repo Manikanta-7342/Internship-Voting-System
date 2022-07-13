@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="UserLogin/CSS/index.css">
+    <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
     <title>login page</title>
+    
   </head>
   <body>
     <div class="wrapper fadeInDown">

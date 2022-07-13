@@ -21,7 +21,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/d7741372ca.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
     <title>Confirmation page</title>
+    
   </head>
   <body>
     <!-- <div class="logo" style="width:10px"> <img src="images/simplelogo.jfif" alt="logoof siff"></div> -->

@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="../ConfirmationPage/css/styles.css">
     <link rel="stylesheet" href="../ConfirmationPage/css/confi.css">
     <script src="https://kit.fontawesome.com/d7741372ca.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
     <title>Confirmation page</title>
+    
   </head>
   <body>
    
