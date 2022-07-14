@@ -31,7 +31,7 @@
 					</div>
 							<div class="form-group">
                         <label>Upload Image:</label>
-						<input type="file" name="file"required> 
+						<input type="file" name="image"required> 
                     </div>
 						<center><button name = "save" type="submit" class="btn btn-primary" style="background-color:#de9d4d;border-color:#de9d4d;">Save Data</button></center>
 				</form>  
@@ -46,12 +46,8 @@
 					
 					$image= addslashes(file_get_contents($_FILES['image']['tmp_name']));
 					$image_name= addslashes($_FILES['image']['name']);
-					$image_size= getimagesize($_FILES['image']['tmp_name']);
-		
-					move_uploaded_file($_FILES["image"]["tmp_name"],"upload/" . $_FILES["image"]["name"]);			
+					$image_size= getimagesize($_FILES['image']['tmp_name']);		
 					$location="image/" . $_FILES["image"]["name"];
-					
-					
 					$conn->query("INSERT INTO category(category,img)values('$category','$location')")or die($conn->error);
 				}						
 			?>		     
