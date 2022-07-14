@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="../ConfirmationPage/css/confi.css">
     <script src="https://kit.fontawesome.com/d7741372ca.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
-    <title>Confirmation page</title>
+    <title> Vote Confirmation page</title>
     
   </head>
   <body>
-   
+  <?php include("sess.php");?>
     <div class="wrapper fadeInDown">
   <div id="formContent">
     <br>
@@ -19,7 +19,7 @@
       <h3 class="fadeIn second" >Confirm Your Vote</h3>
       <?php
                            require '../DatabaseConnection/dbcon.php';
-                       if(!ISSET($_POST['submit']))
+                           if(!ISSET($_POST['submit']))
                            { ?>
                              <script>window.location='../index.php';</script>
                    <?php   } else

@@ -20,11 +20,11 @@
 					<div id="main">
 					<?php
                            require '../DatabaseConnection/dbcon.php';
-						 	
-							   if(!ISSET($_REQUEST['myVar']))
-							   { ?>
-								   <script>window.location='../UserVoting/category.php';</script>
-							<?php   }
+						 		
+							   if(ISSET($_SESSION['category_id']))
+							   { 
+								   
+							   }
 							   else
 							   {
 								   $_SESSION['category_id'] = $_REQUEST['myVar'];
@@ -35,7 +35,7 @@
 
 						   ?>
 					<header id="header">
-						<h1><a href="/Users/puttu/Downloads/login page- internship/videos.html"><strong>Category: <?php echo $row1 ['category']; ?></strong> </a></h1>
+						<h1><strong>Category: <?php echo $row1 ['category']; ?></strong> <button style="position:relative; left: 90%; bottom:2.5px;"><a href="../UserVoting/category.php">Back</a></button></h1>
 						
 					</header> 
 					<?php

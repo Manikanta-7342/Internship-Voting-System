@@ -34,7 +34,7 @@
                         <option >Female</option>														
                     </select>
             <input type="number" class="form-control" name="Age" placeholder="Enter Age">
-            <input type="text" id="signup2" class="fadeIn second" name="id_number" placeholder="Enter Mobile Number" required="true">
+            <input type="text" id="signup2" class="fadeIn second" name="id_number" maxlength="10" placeholder="Enter Mobile Number" required="true">
             <input type="text" id="signup3" class="fadeIn second" name="email" placeholder="Enter E-mail" required="true">
             <!--<input type="text" id="signup3" class="fadeIn second" name="login" placeholder="Enter OTP" required="true"> -->
             <input type="submit" name="save" class="fadeIn fourth" value="Enter To Vote">

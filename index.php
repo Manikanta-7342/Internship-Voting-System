@@ -22,7 +22,7 @@
 
     <!-- Login Form -->
     <form method='post'>
-      <input type="text"  class="fadeIn second" name="phone" placeholder="mobile number" required>
+      <input type="text"  class="fadeIn second" name="phone" maxlength="10" placeholder="mobile number" required>
       <!-- <input type="submit" id="sendOTP" class="fadeIn fourth" name="login" value="send OTP" /> -->
 
       <input type="submit"  name='login' class="fadeIn fourth" value="Send OTP">
@@ -47,7 +47,7 @@
 			$_SESSION['voter_id'] = $row['voter_id'];
       $_SESSION['ph_no']=$row['ph_no'] ?>
       <script>
-        window.location='UserLogin/PHP/otp.php';
+        window.location='UserVoting/category.php';
         </script>
 
 	<?php	}
@@ -55,7 +55,7 @@
       session_start();
       $_SESSION['ph_no']=$row2['ph_no'] ?>
         <script type="text/javascript">
-        window.location='ConfirmationPage/confirmation1.php';
+        window.location='UserLogin/PHP/otp.php';
         </script>
         <?php
       }else{

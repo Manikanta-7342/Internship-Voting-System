@@ -24,6 +24,10 @@
 							<section class="tiles">
 							<?php
                            require '../DatabaseConnection/dbcon.php';
+						   if(ISSET($_SESSION['category_id']))
+							   { 
+								  unset($_SESSION['category_id']);
+							   }
 						   
                            $query =mysqli_query($conn,"SELECT * FROM category");
 							while($row=mysqli_fetch_array($query))

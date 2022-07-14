@@ -11,7 +11,11 @@
 			//$password = $_POST['password'];
 			//$password1 = $_POST['password1'];
 			//$date = date("Y-m-d H:i:s");
-
+			if ( ( $id_number =='' OR strlen($id_number) <>10 OR substr($id_number,0,2) < 60) )
+    {
+        echo "<script type='text/javascript'> alert('Please enter valid mobile number');window.location='signup.php'; </script>";
+         die();
+     }
 			$query = $conn->query("SELECT * FROM voters WHERE ph_no='$id_number'") or die ($conn->error);
 			$numberOfrows=$query->num_rows;
 		

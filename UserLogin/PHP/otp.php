@@ -13,11 +13,6 @@ if(ISSET($_SESSION['ph_no'])){
     #### Custom Logic
     $otpValue=(( isset($_REQUEST['otp']) AND $_REQUEST['otp']<>'' ) ? $_REQUEST['otp'] : '' );
     
-    if ( $otpValue =='' AND $mobile=="")
-    {
-        echo "<script type='text/javascript'> window.history.back(); </script>";
-        die();
-    }
     //else
     // if ( $mobile =='' AND $email=='' )
     // {
@@ -32,7 +27,7 @@ if(ISSET($_SESSION['ph_no'])){
         echo "<script type='text/javascript'> alert('Please enter valid mobile number');window.location='../../index.php'; </script>";
          die();
      }
-     if ( $otpValue <> '') ### OTP value entered by user
+    else if ( $otpValue <> '') ### OTP value entered by user
     {
         ### Check if OTP is matching or not
         $VerificationSessionId=$_REQUEST['VerificationSessionId'];
@@ -44,16 +39,12 @@ if(ISSET($_SESSION['ph_no'])){
             {?>
                 <script>
                 alert("Sucessfullly Verified");
-                
                 window.location="../../UserVoting/category.php";
-            
-                
-                
                 </script>
            <?php }
             else
             {
-                echo "<script type='text/javascript'>alert('Sorry, OTP entered was incorrect.We have sent it again. Please enter correct OTP');  window.location='otp.php';  </script>";
+                echo "<script type='text/javascript'>alert('Sorry, OTP entered was incorrect.We have sent it again. Please enter correct OTP');  window.history.back();  </script>";
                 die();
             }
         
@@ -61,10 +52,13 @@ if(ISSET($_SESSION['ph_no'])){
     else
     {    
             ### Send OTP
-            
             $API_Response_json=json_decode(file_get_contents("https://2factor.in/API/V1/$APIKey/SMS/$mobile/AUTOGEN"),false);
+            if($API_Response_json==NULL){?>
+            <script>alert('Server Error');window.location='../../index.php'</script> 
+            <?php }
+            else{
             $VerificationSessionId= $API_Response_json->Details;
-            
+          }
     }
 
   }
