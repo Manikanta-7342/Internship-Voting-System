@@ -27,11 +27,11 @@ if(ISSET($_SESSION['ph_no'])){
     // else if (  $mobile =='' AND $email <> '' )
     // $forceSubmitWithEmail=1;
 
-    // if ( ( $mobile =='' OR strlen($mobile) <>10 OR substr($mobile,0,2) < 60) )
-    // {
-    //     echo "<script type='text/javascript'> alert('Please enter valid mobile number');window.history.back(); </script>";
-    //     die();
-    // }
+    if ( ( $mobile =='' OR strlen($mobile) <>10 OR substr($mobile,0,2) < 60) )
+    {
+        echo "<script type='text/javascript'> alert('Please enter valid mobile number');window.location='../../index.php'; </script>";
+         die();
+     }
      if ( $otpValue <> '') ### OTP value entered by user
     {
         ### Check if OTP is matching or not
@@ -102,24 +102,12 @@ if(ISSET($_SESSION['ph_no'])){
       <img src="https://www.youngartiste.com/assets/img/young-artiste-logo-white.png" id="icon" alt="User Icon" />
     </div>
 
-    <!-- Login Form -->
     <form action="otp.php" method="post">
     <input type="text" id='otp' name="otp" maxlength="6" placeholder="Enter OTP"  required="required">
     <input type="hidden"  name="VerificationSessionId" value="<?php echo $VerificationSessionId; ?>" >
-      <!-- <input type="submit" id="sendOTP" class="fadeIn fourth" name="login" value="send OTP" />  -->
-      <!-- <div id="formFooter">
-      <a class="underlineHover" href="otp.php">Resend OTP</a>
-    </div> -->
     <input type="hidden"  name="phone" value="<?php echo $mobile; ?>" >
       <input type="submit" id="log" class="fadeIn fourth" value="Login">
     </form>
-
-    
-    
-    <!-- Remind Passowrd -->
-    <!-- <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
-    </div> -->
 
   </div>
 </div>

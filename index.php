@@ -38,7 +38,9 @@
 	
 		$result = $conn->query("SELECT * FROM voters WHERE ph_no = '$idno' &&  `status` = 'Unvoted'") or die(mysqli_errno());
 		$row = $result->fetch_array();
-		$voted = $conn->query("SELECT * FROM `voters` WHERE ph_no = '$idno' && `status` = 'Voted'")->num_rows;
+		$voted = $conn->query("SELECT * FROM `voters` WHERE ph_no = '$idno' && `status` = 'Voted'") or die(mysqli_errno());
+    $row2=$voted->fetch_array();
+    $numberOfRowsOfvoted=$voted;
 		$numberOfRows = $result->num_rows;
     if ($numberOfRows > 0){
 			session_start();
@@ -49,11 +51,11 @@
         </script>
 
 	<?php	}
-    if($voted == 1){
-        ?>
+    else if($numberOfRowsOfvoted == 1){
+      session_start();
+      $_SESSION['ph_no']=$row2['ph_no'] ?>
         <script type="text/javascript">
-        alert('Sorry You Already Voted');
-        window.location='index.php';
+        window.location='ConfirmationPage/confirmation1.php';
         </script>
         <?php
       }else{
