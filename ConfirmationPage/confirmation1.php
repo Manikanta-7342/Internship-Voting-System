@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/d7741372ca.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
+	  <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Confirmation page</title>
     
   </head>
@@ -37,6 +39,8 @@
     
     <div class="container">
       <h3 class="fadeIn second" >You have already voted </h3>
+      <button class="btn"><i class="fa fa-download"></i> Download</button>
+
       <?php
                            
                            session_start(); 
