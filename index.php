@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="UserLogin/CSS/index.css">
     <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
     <title>login page</title>
-    
+
   </head>
   <body>
     <div class="wrapper fadeInDown">
@@ -22,20 +22,21 @@
 
     <!-- Login Form -->
     <form method='post'>
-      <input type="text"  class="fadeIn second" name="phone" maxlength="10" placeholder="mobile number" required>
+      <input type="text"  class="fadeIn second" name="phone" maxlength="10" style="position:relative; top:20px;" placeholder="mobile number" required>
       <!-- <input type="submit" id="sendOTP" class="fadeIn fourth" name="login" value="send OTP" /> -->
 
-      <input type="submit"  name='login' class="fadeIn fourth" value="Send OTP">
+      <input type="submit"  name='login' class="fadeIn fourth" style="position:relative; top:20px;" value="Send OTP">
+      <input type="button" name="Helpbox" value="Help?" class="fadeIn fourth" style="position:relative; bottom:14px;" onclick="helpbox()">
 </form>
 
 
       <?php
 	require 'DatabaseConnection/dbcon.php';
-	
+
 	if(isset($_POST['login'])){
 		$idno=$_POST['phone'];
 		//$password=$_POST['password'];
-	
+
 		$result = $conn->query("SELECT * FROM voters WHERE ph_no = '$idno' &&  `status` = 'Unvoted'") or die(mysqli_errno());
 		$row = $result->fetch_array();
 		$voted = $conn->query("SELECT * FROM `voters` WHERE ph_no = '$idno' && `status` = 'Voted'") or die(mysqli_errno());
@@ -72,6 +73,12 @@
 ?>
   </div>
 </div>
-  
+
+<script type="text/javascript">
+  function helpbox()
+  {
+    alert("if you haven not registered \n please click on register to vote on the top");
+  }
+</script>
   </body>
 </html>
