@@ -47,7 +47,7 @@
 			$_SESSION['voter_id'] = $row['voter_id'];
       $_SESSION['ph_no']=$row['ph_no'] ?>
       <script>
-        window.location='UserVoting/category.php';
+        window.location='UserLogin/PHP/otp.php';
         </script>
 
 	<?php	}
@@ -55,7 +55,7 @@
       session_start();
       $_SESSION['ph_no']=$row2['ph_no'] ?>
         <script type="text/javascript">
-        window.location='UserLogin/PHP/otp.php';
+        window.location='ConfirmationPage/confirmation1.php';
         </script>
         <?php
       }else{

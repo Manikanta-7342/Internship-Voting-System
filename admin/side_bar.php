@@ -27,9 +27,9 @@
                             <a href="report.php"><i class="fa fa-download fa-fw"></i>Voting Reports</a>
                         </li>
                         
-                        <!-- <li>
-                            <a href="login_times.php"> <i class = "fa fa-users" ></i>User Login Time</a>
-                        </li> -->
+                        <li>
+                            <a href="login_times.php"> <i class = "fa fa-users" ></i>Help</a>
+                        </li> 
                         <li>
                            <a href="logout.php"> <i class = "fa fa-sign-out" ></i>Logout</a>
                         </ul>
