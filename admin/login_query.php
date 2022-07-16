@@ -18,7 +18,7 @@
 						<script type="text/javascript">
 						alert('Username/Password Error!');
 						window.location = 'index.php';
-						</script>
+						</script>	
 						<?php
 					} 
 				else if ($rows > 0)

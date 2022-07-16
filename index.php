@@ -41,7 +41,7 @@
 		$row = $result->fetch_array();
 		$voted = $conn->query("SELECT * FROM `voters` WHERE ph_no = '$idno' && `status` = 'Voted'") or die(mysqli_errno());
     $row2=$voted->fetch_array();
-    $numberOfRowsOfvoted=$voted;
+    $numberOfRowsOfvoted=$voted->num_rows;
 		$numberOfRows = $result->num_rows;
     if ($numberOfRows > 0){
 			session_start();
