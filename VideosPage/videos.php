@@ -39,7 +39,7 @@
 						
 					</header> 
 					<?php
-                          $query =mysqli_query($conn,"SELECT p.category, p.participant_video,p.participant_name,p.participant_id FROM participant p,category c where c.category_id= '$cat_id' and c.category=p.category and p.local_video='No'") ;
+                          $query=mysqli_query($conn,"SELECT p.category, p.participant_video,p.participant_name,p.participant_id FROM participant p,category c where c.category_id= '$cat_id' and c.category=p.category and p.local_video='No'") ;
 							while($row=mysqli_fetch_array($query))
 							{ 
 							?>
