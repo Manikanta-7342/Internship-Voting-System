@@ -23,13 +23,8 @@
 					<div class="form-group">
 						<label>Category</label>
 						<select class = "form-control" name = "position" value = "<?php echo $row ['category']?>">
-						<?php $query = $conn->query("SELECT * FROM category ORDER BY category_id DESC");
-												 while($row1 = $query->fetch_array()){
-													$category_id=$row1['category_id']; ?>
-								<option><?php echo $row1 ['category'];?></option>
-								
-								<?php } ?>
-							</select>
+								<option selected disabled><?php echo $row ['category']?></option>
+						</select>
 					</div>
 					<!-- <div class="form-group">
 						<label>Party Name</label>
@@ -41,37 +36,13 @@
 						<label>Name</label>
 							<input class="form-control" type ="text" name = "firstname" required="true" value = "<?php echo $row ['participant_name']?>">
 					</div>
-					<!-- <div class="form-group">
-						<label>Lastname</label>
-							<input class="form-control"  type = "text" name = "lastname" value = "<?//php echo $row ['lastname']?>">
-					</div> -->
-					
-					<!-- <div class="form-group">
-						<label>Age</label>
-						    <input type="number" name="Age" class="form-control" value="<?//php echo $row ['Age']?>">
-							
-					</div> -->
 
-					
-					<!-- <div class="form-group">
-						<label>Gender</label>
-							<select class = "form-control" name = "gender">
-								<option><?//php echo $row ['gender']?></option>
-								<option></option>
-								<option>Male</option>
-								<option>Female</option>
-							</select>
-					</div> -->
-					<!-- <div class="form-group">
-									<label>Image</label>
-									<input type="file" name="image"> 
-					</div> -->
 					<div class="form-group">
                         <label>Provide Video Link Key:</label>
 						<input class="form-control" type="text" name="video" placeholder="Eg:- https://www.youtube.com/watch?v=(KEY)" >
 							<br><center><strong>OR</strong></center>
 							<label>Upload a Video</label>
-						<input class="form-control" type="file" name="file">  
+						<input class="form-control" type="file" name="file" >  
                     </div>
 					<button name = "update" type="submit" class="btn btn-primary">Save Data</button>
 				</form>
@@ -90,7 +61,7 @@
 		
 		if(ISSET($_POST['update'])){
 			$bool = true;
-			$position=$_POST['position'];
+			//$position=$_POST['position'];
 			$firstname=$_POST['firstname'];
 			//$lastname=$_POST['lastname'];
 			//$age=$_POST['Age'];
@@ -120,7 +91,7 @@
 						if(move_uploaded_file($_FILES['file']['tmp_name'],$target_file)){ 
 						// Insert record
 
-						$conn->query("UPDATE participant SET category='$position',participant_name='$firstname',participant_video='".$target_file."',local_video='Yes' WHERE participant_id='$candidate_id'");
+						$conn->query("UPDATE participant SET participant_name='$firstname',participant_video='".$target_file."',local_video='Yes' WHERE participant_id='$candidate_id'");
 						?><script>window.location='participant.php';</script><?php
 						}
 						//$_SESSION['message'] = "Upload successfully.";
@@ -134,7 +105,7 @@
 				
 			}
 			else{
-				$conn->query("UPDATE participant SET category='$position',participant_name='$firstname',participant_video='$video',local_video='No' WHERE participant_id='$candidate_id'")or die($conn->error);
+				$conn->query("UPDATE participant SET participant_name='$firstname',participant_video='$video',local_video='No' WHERE participant_id='$candidate_id'")or die($conn->error);
 				?><script>window.location='participant.php';</script><?php
 				}
 		

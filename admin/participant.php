@@ -48,7 +48,7 @@
 										?>
 											
 											<td><?php echo $row ['category'];?></td>
-                                            <td style="text-align:center"><?php echo $row ['participant_name'];?></td>
+                                            <td><?php echo $row ['participant_name'];?></td>
                                             <td style="text-align:center">
 											
 												 <a rel="tooltip"  title="Delete" id="<?php echo $candidate_id; ?>" href="#delete_user<?php echo $candidate_id; ?>" data-target="#delete_user<?php echo $candidate_id?>" data-toggle="modal"class="btn btn-danger btn-outline"><i class="fa fa-trash-o"></i> Delete</a>	

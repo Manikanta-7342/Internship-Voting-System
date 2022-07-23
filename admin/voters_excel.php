@@ -24,7 +24,7 @@ print("\n");
 
 while($row = mysqli_fetch_row($resultt))  //fetch_table_data
 {
-    $schema_insert = "";
+    $schema_insert = "\t";
     for($j=0; $j< mysqli_num_fields($resultt);$j++)
     {
         if(!isset($row[$j]))
@@ -37,7 +37,7 @@ while($row = mysqli_fetch_row($resultt))  //fetch_table_data
     $schema_insert = str_replace($sep."$", "", $schema_insert);
     $schema_insert = preg_replace("/\r\n|\n\r|\n|\r/", " ", $schema_insert);
     $schema_insert .= "\t";
-    print(trim($schema_insert));
+    print($schema_insert);
     print "\n";
 }
 ?>

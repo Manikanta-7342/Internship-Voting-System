@@ -38,7 +38,7 @@
 
                         &nbsp;
                         &nbsp;
-                        <button id="sort" class="btn btn-success">Sort</button><button type="button" onclick="window.print();" style="margin-right:14px; background-color:#de9d4d;border-color:#de9d4d;" id="print" class="pull-right btn btn-info"><i class="fa fa-print"></i> Print</button>
+                        <button id="sort" class="btn btn-success">Sort</button>
                         <a href="report_excel.php"><button type="button" style="margin-right:14px; background-color:#de9d4d;border-color:#de9d4d;" id="print" class="pull-right btn btn-info"><i class="fa fa-print"></i>Export to Excel</button></a>
 
                     </form>
