@@ -29,7 +29,7 @@
     </div> -->
     <div class="fadeIn first">
       
-    <img src="https://www.youngartiste.com/assets/img/young-artiste-logo-white.png" id="icon" alt="User Icon" />
+    <img src="../UserLogin/young-artiste-logo-white.png" id="icon" alt="User Icon" />
 
     </div>
     <div class="first fadeIn third">
@@ -39,7 +39,7 @@
     
     <div class="container">
       <h3 class="fadeIn second" >You have already voted </h3>
-      <button class="btn"><i class="fa fa-download"></i> Download</button>
+      
 
       <?php
                            
@@ -51,14 +51,15 @@
                $query1 =mysqli_query($conn,"SELECT p.participant_name,p.category FROM participant p, votes v1,voters v2 where v2.ph_no=$mobile and v2.voter_id=v1.voter_id and v1.participant_id=p.participant_id");
 						   $row1=mysqli_fetch_array($query1); ?>
      <p class="fadeIn fourth">
-       to <br>Participant Name: <strong><?php echo $row1 ['participant_name']; ?></strong> <br> Category:<strong> <?php echo $row1 ['category']; session_destroy(); }?></strong>
+       to <br>Participant Name: <strong><?php echo $row1 ['participant_name']; ?></strong> <br> Category:<strong> <?php echo $row1 ['category']; }?></strong>
      </p> 
+     <button ondblclick="window.print();" class="btn"><i class="fa fa-download"></i> <label >Download</label></button>
     </div>
 
     <div id="formFooter">
       <a class="underlineHover" href="https://www.youngartiste.com/">@youngartiste2022</a>
     </div>
-
+              <?php  session_destroy();?>
   </div>
 </div>
 

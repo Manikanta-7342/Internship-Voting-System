@@ -25,8 +25,8 @@
 					{
 						?>
 						<script type="text/javascript">
-						alert('Access Granted!');
-						window.location = 'participant.php';
+						
+						window.location = 'help.php';
 						</script>
 						<?php
 					session_start();

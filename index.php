@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="UserLogin/CSS/index.css">
     <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
     <title>login page</title>
-
   </head>
   <body>
     <div class="wrapper fadeInDown">
@@ -21,12 +20,21 @@
     </div>
 
     <!-- Login Form -->
-    <form method='post'>
+    <form method='post' >
+    
+                        <h3 class="active">Login As: </h3>
+                        
+                        <select onchange = "page(this.value)" class = "form-field" style=" color: #767676;" required="true">
+                    <option value = "admin/index.php">Admin</option>    
+                    <option selected disables>Voter</option>
+                        													
+                    </select>
+  
       <input type="text"  class="fadeIn second" name="phone" maxlength="10" style="position:relative; top:20px;" placeholder="mobile number" required>
       <!-- <input type="submit" id="sendOTP" class="fadeIn fourth" name="login" value="send OTP" /> -->
 
       <input type="submit"  name='login' class="fadeIn fourth" style="position:relative; top:20px;" value="Send OTP">
-      <input type="button" name="Helpbox" value="Help?" class="fadeIn fourth" style="position:relative; bottom:14px;" onclick="helpbox()">
+      
 </form>
 
 
@@ -37,9 +45,9 @@
 		$idno=$_POST['phone'];
 		//$password=$_POST['password'];
 
-		$result = $conn->query("SELECT * FROM voters WHERE ph_no = '$idno' &&  `status` = 'Unvoted'") or die(mysqli_errno());
+		$result = $conn->query("SELECT * FROM voters WHERE ph_no = '$idno' &&  `status` = 'Unvoted'") or die($conn->error);
 		$row = $result->fetch_array();
-		$voted = $conn->query("SELECT * FROM `voters` WHERE ph_no = '$idno' && `status` = 'Voted'") or die(mysqli_errno());
+		$voted = $conn->query("SELECT * FROM `voters` WHERE ph_no = '$idno' && `status` = 'Voted'") or die($conn->error);
     $row2=$voted->fetch_array();
     $numberOfRowsOfvoted=$voted->num_rows;
 		$numberOfRows = $result->num_rows;
@@ -48,7 +56,7 @@
 			$_SESSION['voter_id'] = $row['voter_id'];
       $_SESSION['ph_no']=$row['ph_no'] ?>
       <script>
-        window.location='UserLogin/PHP/otp.php';
+        window.location='UserVoting/category.php';
         </script>
 
 	<?php	}
@@ -73,12 +81,16 @@
 ?>
   </div>
 </div>
-
 <script type="text/javascript">
+  function page (src) {
+    window.location = src;
+  }
+  </script>
+<!-- <script type="text/javascript">
   function helpbox()
   {
     alert("if you haven not registered \n please click on register to vote on the top");
   }
-</script>
+</script> -->
   </body>
 </html>

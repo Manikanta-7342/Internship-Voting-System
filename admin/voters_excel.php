@@ -5,6 +5,8 @@ $DB_TBLName = "voters";
 $filename = "votersReport.excelFile";  //your_file_name
 $file_ending = "xls";   //file_extention
 
+
+
 header("Content-Type: application/xls");    
 header("Content-Disposition: attachment; filename=$filename.xls");  
 header("Pragma: no-cache"); 

@@ -24,7 +24,7 @@
 				//$conn->query("insert into voters(id_number, password, firstname,lastname, gender,Age,status) VALUES('$id_number', '".md5($password)."','$firstname','$lastname', '$gender', '$age','Unvoted')");
 			?>
 	            <script>
-			        alert( 'Successfully Registered');
+			        alert( 'Successfully Registered \n Please Login to Vote');
 			         window.location='../../index.php';
 	            </script>
             <?php
@@ -33,7 +33,7 @@
 		}else{
 			?>
 	            <script>
-			        alert( 'Phone Number Already Registered');
+			        alert( 'Phone Number Already Registered \n Proceed to Login');
 			         window.location='../../index.php';
 	            </script>
             <?php

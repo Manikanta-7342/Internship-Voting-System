@@ -42,7 +42,7 @@
     </div> -->
     <div class="fadeIn first">
       
-    <img src="https://www.youngartiste.com/assets/img/young-artiste-logo-white.png" id="icon" alt="User Icon" />
+    <img src="../UserLogin/young-artiste-logo-white.png" id="icon" alt="User Icon" />
 
     </div>
     <div class="first fadeIn third">
@@ -61,7 +61,7 @@
        You have voted to <strong><?php echo $row1 ['participant_name']; ?></strong> in <strong><?php echo $row1 ['category']; ?></strong>
      </p> 
     </div>
-
+    <button class="btn" ondblclick="window.print();"><i class="fa fa-download"></i> Download</button>
     <div id="formFooter">
       <a class="underlineHover" href="https://www.youngartiste.com/">@youngartiste2022</a>
     </div>

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom:0; background-color:#de9d4d;">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#" style = "color:white;font-weight: bold;font-size:30px;"><i class = "fa fa-home fa-large" > </i>Admin Dashboard</a>
+                <label class="navbar-brand"  style = "color:white;font-weight: bold;font-size:30px;"><i class = "fa fa-home fa-large" > </i>Admin Dashboard</label>
 				
             </div>
 
@@ -28,7 +28,7 @@
                         </li>
                         
                         <li>
-                            <a href="login_times.php"> <i class = "fa fa-users" ></i>Help</a>
+                            <a href="help.php"> <i class = "fa fa-users" ></i>Help</a>
                         </li> 
                         <li>
                            <a href="logout.php"> <i class = "fa fa-sign-out" ></i>Logout</a>

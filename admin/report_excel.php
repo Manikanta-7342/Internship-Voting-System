@@ -12,7 +12,7 @@ header("Expires: 0");
 
 $sep = "\t";
 
-$sql="SELECT * FROM votes"; 
+$sql="SELECT vs.name,vs.ph_no,vs.email,p.participant_name,p.category FROM votes v,voters vs,participant p where v.voter_id=vs.voter_id and p.participant_id=v.participant_id"; 
 $resultt = $conn->query($sql);
 while ($property = mysqli_fetch_field($resultt)) { //fetch table field name
     echo $property->name."\t";

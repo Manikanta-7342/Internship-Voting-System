@@ -49,7 +49,7 @@
 							<div class="form-group">
                         <label>Provide Video Link Key:</label>
 						<input class="form-control" type="text" name="video" placeholder="Eg:- https://www.youtube.com/watch?v=(KEY)" >
-							<br><center><strong>OR</strong></center><br>
+							<br><center><strong>OR</strong></center>
 							<label>Upload a Video</label>
 						<input class="form-control" type="file" name="file">  
                     </div>
@@ -84,14 +84,14 @@
 			
 					// Check file size
 					if(($_FILES['file']['size'] >= $maxsize) || ($_FILES["file"]["size"] == 0)) {
-						 echo "File too large. File must be less than 5MB.";
+						 ?><script>alert("File Size should be less than 40MB");</script><?php
 					}else{
 						// Upload
 						if(move_uploaded_file($_FILES['file']['tmp_name'],$target_file)){ 
 						// Insert record
 
 						$query ="INSERT INTO participant(category,participant_name,participant_video,local_video) VALUES('$position','$firstname','".$target_file."','Yes')";
-						mysqli_query($conn,$query);
+						mysqli_query($conn,$query);?><script>alert("Added Participant Succesfully");window.location='participant.php';</script><?php
 						}
 						//$_SESSION['message'] = "Upload successfully.";
 						
@@ -99,12 +99,13 @@
 
 				}
 				else{
-					echo "Invalid file extension.";
+					?><script>alert("Invalid file extension.");window.history.back();</script><?php 
 				}
 				
 			}
 			else{
 				$conn->query("INSERT INTO participant values(' ','$position','$firstname','$video','No')")or die($conn->error);
+				?><script>alert("Added Participant Succesfully");window.location='participant.php';</script><?php
 				}
 			
 			} 					
@@ -124,12 +125,7 @@
     </div>
     <!-- /#wrapper -->
 
-    <script>
-	function sav(){
-		alert("Successfully saved");
-		window.location='participant.php';
-	}
-	</script>
+    
 
 </body>
 
