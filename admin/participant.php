@@ -30,9 +30,9 @@
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th >Category</th>
-                                            <th >Participant_Name</th>
-                                            <th>Action</th>
+                                            <th align="center">Category</th>
+                                            <th align="center">Participant Name</th>
+                                            <th align="center">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>

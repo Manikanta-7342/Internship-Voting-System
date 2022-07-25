@@ -13,7 +13,7 @@
 			</div>
 																
 			<div class="modal-body">
-				Are you sure you want to delete this candidate ?
+				Are you sure you want to delete this candidate?
 			</div>
 									
 			<div class="modal-footer">

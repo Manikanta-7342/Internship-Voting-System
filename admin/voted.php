@@ -45,14 +45,14 @@
                                     <thead>
                                         <tr>
                                          
-                                            <th>Voter ID</th>
-                                            <th>Name</th>
-                                            <th>Gender</th>
-                                            <th>Age</th>
-                                            <th>Category</th>
-                                            <th>Participant Name</th>
-                                            <th>Contact Number</th>
-                                            <th>Email</th>
+                                            <th align="center">Voter ID</th>
+                                            <th align="center">Name</th>
+                                            <th align="center">Gender</th>
+                                            <th align="center">Age</th>
+                                            <th align="center">Category</th>
+                                            <th align="center">Participant Name</th>
+                                            <th align="center">Contact Number</th>
+                                            <th align="center">Email</th>
                                         </tr>
                                     </thead>
                                     <tbody>

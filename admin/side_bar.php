@@ -5,7 +5,7 @@
             </div>
 
             <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
+                <div style="margin-top:5px;" class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         
                         <li>

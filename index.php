@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="UserLogin/CSS/index.css">
     <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
-    <title>login page</title>
+    <title>Sign In-SIFF Young Artiste</title>
   </head>
   <body>
     <div class="wrapper fadeInDown">
   <div id="formContent">
     <!-- Tabs Titles -->
     <h2 class="active"> Sign In </h2>
-  <a href="UserLogin/PHP/signup.php"><h2 class="inactive underlineHover">Register To Vote </h2></a>
+  <a href="UserLogin/PHP/signup.php"><h2 class="inactive underlineHover">Register</h2></a>
 
     <!-- Icon -->
     <div class="fadeIn first">
@@ -22,7 +22,7 @@
     <!-- Login Form -->
     <form method='post' >
     
-                        <h3 class="active">Login As: </h3>
+                        <h3 class="active">Login as: </h3>
                         
                         <select onchange = "page(this.value)" class = "form-field" style=" color: #767676;" required="true">
                     <option value = "admin/index.php">Admin</option>    

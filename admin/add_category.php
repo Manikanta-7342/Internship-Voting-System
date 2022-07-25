@@ -27,7 +27,7 @@
                             </div>
 							<div class="form-group">
 						<label>Category Name:</label>
-							<input class="form-control" type ="text" name = "firstname" placeholder="Please enter Category Name" required=>
+							<input class="form-control" type ="text" name = "firstname" placeholder="Please enter the category name:" required=>
 					</div><br>
 							<div class="form-group">
                         <label>Upload Image:</label>

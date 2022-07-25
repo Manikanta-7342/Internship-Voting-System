@@ -27,7 +27,7 @@
 					<div class="form-group">
 						<label>Select Category:</label>
 						<select class = "form-control" name = "position" required>
-						<option selected disabled>Select Category Group</option>
+						<option selected disabled>Select the category group:</option>
 						<?php 
 											require '../DatabaseConnection/dbcon.php';
 											$bool = false;
@@ -44,7 +44,7 @@
                             </div>
 							<div class="form-group">
 						<label>Name:</label>
-							<input class="form-control" type ="text" name = "firstname" placeholder="Please enter Name" required="true">
+							<input class="form-control" type ="text" name = "firstname" placeholder="Please enter the name of the participant:" required="true">
 					</div>
 							<div class="form-group">
                         <label>Provide Video Link Key:</label>

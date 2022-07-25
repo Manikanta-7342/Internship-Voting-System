@@ -23,7 +23,7 @@
                     <form method="post" action="sort.php">
 
                         <select name="position" id="position" class="form-control pull-left" style="width:300px;margin-left:19px; ">
-                            <option readonly>----Sort by Category----</option>
+                            <option readonly>Sort by Category</option>
                             <?php 
 											require '../DatabaseConnection/dbcon.php';
 											//$bool = false;
@@ -54,7 +54,7 @@
                     <thead>
                                 <td style="width:600px;" class="alert alert-success">Participants for <?php echo $row ['category'];?>  </td>
                                
-                                <td class="alert alert-success">Total</td>
+                                <td align="center" class="alert alert-success">Total</td>
     </thead>        
 										
 			<?php

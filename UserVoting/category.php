@@ -3,23 +3,23 @@
 <html>
 	<head>
 	<link rel="icon" type="image/x-icon" href="favicon/TI3.png">
-		<title>Categories</title>
+		<title>SIFF Young Artiste</title>
 		
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<?php include("../VideosPage/sess.php")?>
-	<body class="is-preload">
+	<body class="is-preload" style="background-colour:black">
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>SIFF<br />
-								 <a href="https://www.youngartiste.com">YOUNG ARTISITE</a></h1>
-								<p>Select the required category to vote for in this voting contest.</p>
+								
+								 <a href="https://www.youngartiste.com">SIFF YOUNG ARTISTE</a></h1>
+								<p style="font-size:50px;">Select the category you want to vote from the list below:</p>
 							</header>
 							<section class="tiles">
 							<?php

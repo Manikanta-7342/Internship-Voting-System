@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
-    <title>SignUp page</title>
+    <title>Register-SIFF Young Artiste</title>
     
   </head>
   <body>
@@ -16,7 +16,7 @@
 
           <!-- Tabs Titles -->
           <!-- <a href="index.html"><h2 class="inactive underlineHover"> Sign In </h2></a> -->
-          <h2 class="active">Register To Vote </h2>
+          <h2 class="active">Register</h2>
       
           <!-- Icon -->
           <div class="fadeIn first">
@@ -25,17 +25,17 @@
       
           <!-- signup Form -->
           <form method = "post" enctype = "multipart/form-data">
-            <input type="text" id="signup" class="fadeIn second" name="firstname" placeholder="Enter Name" required="true">
+            <input type="text" id="signup" class="fadeIn second" name="firstname" placeholder="Enter Name:" required="true">
 
                 <!-- <label>Gender</label> <br/> -->
                     <select class = "form-field" style=" color: #767676;" name = "gender" required="true">
-                    <option disabled selected>Gender</option>    
+                    <option disabled selected>Select Gender:</option>    
                     <option  >Male</option>
                         <option >Female</option>														
                     </select>
-            <input type="number" class="form-control" name="Age" placeholder="Enter Age">
-            <input type="text" id="signup2" class="fadeIn second" name="id_number" maxlength="10" placeholder="Enter Mobile Number" required="true">
-            <input type="text" id="signup3" class="fadeIn second" name="email" placeholder="Enter E-mail" required="true">
+            <input type="number" class="form-control" name="Age" placeholder="Enter Age:">
+            <input type="text" id="signup2" class="fadeIn second" name="id_number" maxlength="10" placeholder="Enter Mobile Number:" required="true">
+            <input type="text" id="signup3" class="fadeIn second" name="email" placeholder="Enter E-mail:" required="true">
             <!--<input type="text" id="signup3" class="fadeIn second" name="login" placeholder="Enter OTP" required="true"> -->
             <input type="submit" name="save" class="fadeIn fourth" value="Enter To Vote">
           </form>
