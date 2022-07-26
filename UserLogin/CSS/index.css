@@ -3,7 +3,7 @@
 /* BASIC */
 
 html {
-  background-color: rgb(222,157,77);
+  background-color: #f6f6f;
 }
 
 body {
@@ -40,6 +40,11 @@ h2 {
   width: 100%;
   min-height: 100%;
   padding: 20px;
+  background-image: url(../question.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
 }
 
 #formContent {
@@ -251,7 +256,7 @@ input[type=text]:placeholder {
 #icon {
   width:60%;
   padding: 30px;
-  background-color:rgb(222,157,77);
+  background-color:#f6f6f6;
 }
 
 * {

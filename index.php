@@ -16,7 +16,7 @@
 
     <!-- Icon -->
     <div class="fadeIn first">
-      <img src="https://www.youngartiste.com/assets/img/young-artiste-logo-white.png" id="icon" alt="User Icon" />
+      <img src="UserLogin/PHP/signup.php" id="icon" alt="User Icon" />
     </div>
 
     <!-- Login Form -->
