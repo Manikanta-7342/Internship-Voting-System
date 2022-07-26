@@ -25,5 +25,7 @@
     
     <link rel="stylesheet" type="text/css" href="css/b.css">
 
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>

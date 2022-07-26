@@ -5,7 +5,6 @@
         <!-- Navigation -->
         <?php include ('side_bar.php');?>
         <!-- Page Content -->
-        
         <div id="page-wrapper">
         <div class="row"><hr/>
         <div class="panel panel-default" style="border-color:white;">
@@ -25,14 +24,14 @@
                     $count3 = $conn->query("SELECT COUNT(*) as total FROM `voters` WHERE `gender` = 'Male' ")->fetch_array();
                     $count4 =  $conn->query("SELECT COUNT(*) as total FROM `voters` WHERE `gender` = 'Female'")->fetch_array();
 					?>
-				<a href="voters.php" class = "btn btn-primary btn-outline" ><i class = "fa fa-paw"></i> All Voters (<?php echo $count['total']?>)</a>
-				<a href="voted.php" class = "btn btn-success btn-outline"><i class = "fa fa-paw"></i> Voted(<?php echo $count1['total']?>)</a>
-				<a href="unvoted.php" class = "btn btn-danger btn-outline"><i class = "fa fa-paw"></i> Unvoted(<?php echo $count2['total']?>) </a>
+				<a href="voters.php" class = "btn btn-primary btn-outline" >All Voters (<?php echo $count['total']?>)</a>
+				<a href="voted.php" class = "btn btn-success btn-outline">Voted(<?php echo $count1['total']?>)</a>
+				<a href="unvoted.php" class = "btn btn-danger btn-outline">Unvoted(<?php echo $count2['total']?>) </a>
                 <a href="voters_excel.php"><button type="button" style = "margin-right:14px; background-color:#de9d4d;border-color:#de9d4d;" id ="print" class = "pull-right btn btn-info"><i class = "fa fa-print"></i>Export to Excel</button></a>
                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                  <br/><br/>
-                 <label  ><i class = "fa fa-paw"></i> Males(<?php echo $count3['total']?>)</label> <br/>
-                <label ><i class = "fa fa-paw"></i> Females(<?php echo $count4['total']?>)</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <label  ><i class = "fa fa-male"></i> Males(<?php echo $count3['total']?>)</label> <br/>
+                <label ><i class = "fa fa-female"></i> Females(<?php echo $count4['total']?>)</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <br/>
                 <hr/>
 				
