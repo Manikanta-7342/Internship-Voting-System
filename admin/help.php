@@ -34,8 +34,8 @@
                                     <ul>
                                       <li>To add a participant, please click on ‘Add Participant’ in the side bar or <a href="add_participant.php" class="click">click here</a>.</li>
                                       <li><strong>Note:</strong><br>
-                                      The maximum limit for a video file uploaded from local storage is restricted to 40MB.</br>
-                                      In case a Youtube video is added, only the key of the video is to be pasted in the respective field.</li>
+                                      The maximum limit for a video file uploaded from local storage is restricted to <strong>40MB</strong>.</br>
+                                      In case a Youtube video is added, only the <strong>key of the video</strong> is to be pasted in the respective field.</li>
                                     </ul>
                                       </p>
                                 </div>
