@@ -24,7 +24,7 @@
 <br>
     <!-- Icon -->
     <div class="fadeIn first">
-      <img src="https://www.youngartiste.com/assets/img/young-artiste-logo-white.png" id="icon" alt="User Icon" />
+      <img src="young-artiste-logo.png" id="icon" alt="User Icon" />
     </div>
 
     <!-- Login Form -->
