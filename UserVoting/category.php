@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<?php include("../VideosPage/sess.php")?>
-	<body class="is-preload" style="background-color:black">
+	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Main -->
