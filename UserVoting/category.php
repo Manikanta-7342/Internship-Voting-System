@@ -15,8 +15,8 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								 <a href="https://www.youngartiste.com">SIFF YOUNG ARTISTE</a></h1>
-								<p style="font-size:50px;">Select the category you want to vote from the list below:</p>
+								 <a href="https://www.youngartiste.com"><img src="image/young-artiste-white.png" style="width : 250px; height:auto; background-color: #e0ab68; position : relative; top: 50px;"></a>
+								<p style="font-size:50px; position: relative; top:120px;">Select the category you want to vote from the list below:</p>
 							</header>
 							<section class="tiles">
 							<?php
