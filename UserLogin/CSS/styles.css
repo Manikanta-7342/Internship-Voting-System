@@ -1,16 +1,100 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /* BASIC */
-
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-heading {
+  background-color: rgba(0, 0, 0, 1);
+  font-size: large;
+  color: white;
+}
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+button {
+    overflow: visible;
+}
 html {
-  background-color: #f6f6f6;
+  background-color: rgb(222,157,77);
 }
 
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
 }
+.circle{
+  height: 100px;
+  width: 100px;
+  background-color: #198754;
+  border-radius: 50%;
+ align-items: center;
+ margin-left: 170px;
+ text-align: center;
+ position: static;
 
+ padding: 10px;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+.fa-solid{
+  padding-top: 10px;
+    background-color: white;
+}
+.first{
+  padding-top: 10px;
+  /* padding-bottom: 20px; */
+}
+/* .bac{
+  position: absolute;
+  width:100px;
+} */
 a {
   color: #92badd;
   display:inline-block;
@@ -27,6 +111,10 @@ h2 {
   margin: 40px 8px 10px 8px;
   color: #cccccc;
 }
+.logo{
+  position: absolute;
+}
+
 
 /* STRUCTURE */
 
@@ -37,12 +125,7 @@ h2 {
   justify-content: center;
   width: 100%;
   min-height: 100%;
-  padding: 20px;
-  background-image: url(../Images/background-image.gif);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0;
+  /* padding: 20px; */
 }
 
 #formContent {
@@ -50,7 +133,7 @@ h2 {
   border-radius: 10px 10px 10px 10px;
   background: #fff;
   padding: 30px;
-  width: 90%;
+  width: 50%;
   max-width: 450px;
   position: relative;
   padding: 0px;
@@ -62,11 +145,13 @@ h2 {
 #formFooter {
   background-color: #f6f6f6;
   border-top: 1px solid #dce8f1;
-  padding: 25px;
+  padding: 25px 0;
   text-align: center;
   -webkit-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
 }
+
+
 
 /* TABS */
 
@@ -78,6 +163,8 @@ h2.active {
   color: #0d0d0d;
   border-bottom: 2px solid #5fbae9;
 }
+
+
 
 /* FORM TYPOGRAPHY*/
 
@@ -115,7 +202,7 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
   transform: scale(0.95);
 }
 
-input[type=text],input[type=number],.form-field,input[type=password] {
+input[type=text] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
@@ -136,7 +223,7 @@ input[type=text],input[type=number],.form-field,input[type=password] {
   border-radius: 5px 5px 5px 5px;
 }
 
-input[type=text]:focus,.form-field:focus,input[type=password] {
+input[type=text]:focus {
   background-color: #fff;
   border-bottom: 2px solid #5fbae9;
 }
@@ -145,19 +232,21 @@ input[type=text]:placeholder {
   color: #cccccc;
 }
 
+
+
 /* ANIMATIONS */
 
 /* Simple CSS3 Fade-in-down Animation */
- .fadeInDown {
+.fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-} 
+}
 
- @-webkit-keyframes fadeInDown {
+@-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
@@ -168,9 +257,9 @@ input[type=text]:placeholder {
     -webkit-transform: none;
     transform: none;
   }
-} 
+}
 
- @keyframes fadeInDown {
+@keyframes fadeInDown {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
@@ -181,13 +270,27 @@ input[type=text]:placeholder {
     -webkit-transform: none;
     transform: none;
   }
-} 
+}
 
 /* Simple CSS3 Fade-in Animation */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
 
 .fadeIn.first {
   -webkit-animation-delay: 0.4s;
@@ -238,6 +341,7 @@ input[type=text]:placeholder {
   top: 7px;
 }
 
+
 /* OTHERS */
 
 *:focus {
@@ -247,9 +351,23 @@ input[type=text]:placeholder {
 #icon {
   width:60%;
   padding: 30px;
-  background-color:#f6f6f6;
+  background-color:rgb(222,157,77);
 }
 
 * {
   box-sizing: border-box;
+}
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
 }

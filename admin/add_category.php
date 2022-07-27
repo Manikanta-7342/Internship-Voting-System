@@ -1,11 +1,9 @@
-
 <?php include ('head.php');?>
 <?php include ('session.php');?>
 <body>
     <div id="wrapper">
         <!-- Navigation -->
         <?php include ('side_bar.php');?>
-
         <!-- Page Content -->
         <div id="page-wrapper">
 			<hr />
@@ -22,9 +20,7 @@
 								<div class="modal-body">
 				<form  method = "post" enctype = "multipart/form-data" >	
 					<div class="form-group">
-						
-					
-                            </div>
+						</div>
 							<div class="form-group">
 						<label>Category Name:</label>
 							<input class="form-control" type ="text" name = "firstname" placeholder="Please enter the category name:" required=>
@@ -35,9 +31,8 @@
                     </div>
 						<center><button name = "save" type="submit" class="btn btn-primary" style="background-color:#de9d4d;border-color:#de9d4d;">Save Data</button></center>
 				</form>  
-			</div>
-            
-                            <!-- /.table-responsive -->
+			</div> 
+            <!-- /.table-responsive -->
 							<?php 
 				require_once '../DatabaseConnection/dbcon.php';
 				
@@ -48,10 +43,10 @@
 					$image_name= addslashes($_FILES['image']['name']);
 					$image_size= getimagesize($_FILES['image']['tmp_name']);
 		
-					move_uploaded_file($_FILES["image"]["tmp_name"],"../UserVoting/image/image" . $_FILES["image"]["name"]);			
-					//$location="upload/" . $_FILES["image"]["name"];
+					move_uploaded_file($_FILES["image"]["tmp_name"],"../UserVoting/image/" . $_FILES["image"]["name"]);			
+					
 							
-					$location="image/image" . $_FILES["image"]["name"];
+					$location="image/" . $_FILES["image"]["name"];
 					$conn->query("INSERT INTO category(category,img)values('$category','$location')")or die($conn->error);
 					?><script>alert("Added Category Succesfully");window.location='participant.php';</script><?php
 				}						
