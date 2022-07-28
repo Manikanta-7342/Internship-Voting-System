@@ -1,4 +1,11 @@
-
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="UserLogin/CSS/index.css">
+    <link rel="icon" type="image/x-icon" href="https://competition.youngartiste.com/assets/img/siff.png">
+    <title>Unvoted </title>
+  </head>
 <?php include ('session.php');?>
 <?php include ('head.php');?>
 

@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/x-icon" href="https://competition.youngartiste.com/assets/img/siff.png">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add_Category</title>
+</head>
+
 <?php include ('head.php');?>
 <?php include ('session.php');?>
 <body>

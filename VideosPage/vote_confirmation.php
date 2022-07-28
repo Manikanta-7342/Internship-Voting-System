@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../ConfirmationPage/css/styles.css">
     <link rel="stylesheet" href="../ConfirmationPage/css/confi.css">
     <script src="https://kit.fontawesome.com/d7741372ca.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
+    <link rel="icon" type="image/x-icon" href="https://competition.youngartiste.com/assets/img/siff.png">
     <title> Vote Confirmation page</title>
     
   </head>

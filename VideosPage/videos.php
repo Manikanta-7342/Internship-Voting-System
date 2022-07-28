@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-	<link rel="icon" type="image/x-icon" href="favicon/TI3.png">
+	<link rel="icon" type="image/x-icon" href="https://competition.youngartiste.com/assets/img/siff.png">
 		<title>Videos Page</title>
 		
 		<meta charset="utf-8" />

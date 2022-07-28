@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/index.css">
-    <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
+    <link rel="icon" type="image/x-icon" href="https://competition.youngartiste.com/assets/img/siff.png">
     <title>Register-SIFF Young Artiste</title>
   </head>
   <body>

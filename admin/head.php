@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
+    <link rel="icon" type="image/x-icon" href="https://competition.youngartiste.com/assets/img/siff.png">
     <title>ADMIN</title>
 
     <!-- Bootstrap Core CSS -->

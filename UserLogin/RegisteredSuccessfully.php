@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="https://kit.fontawesome.com/d7741372ca.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
-    <title>Confirmation page</title>
+    <link rel="icon" type="image/x-icon" href="https://competition.youngartiste.com/assets/img/siff.png">
+    <title>RegisteredSuccessfully </title>
   </head>
   <body>
     <div class="wrapper fadeInDown">
