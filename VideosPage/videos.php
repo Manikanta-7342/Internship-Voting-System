@@ -35,7 +35,7 @@
 
 						   ?>
 					<header id="header">
-						<h1><strong>Category: <?php echo $row1 ['category']; ?></strong> <button style="position:relative; left: 90%; bottom:2.5px;"><a href="../UserVoting/category.php">Back</a></button></h1>
+						<h1><strong>Category: <?php echo $row1 ['category']; ?></strong> <button style="position:relative; left:80%; bottom:2.5px;"><a href="../UserVoting/category.php">Back</a></button></h1>
 						
 					</header> 
 					<?php
