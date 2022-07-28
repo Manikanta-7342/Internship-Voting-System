@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/d7741372ca.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="favicon/TI3.png">
-    <title>Confirmation page</title>
+    <title>SIFF | Confirmation </title>
   </head>
   <body>
     <div class="wrapper fadeInDown">
@@ -30,7 +30,7 @@
     <!-- Icon -->
     <div class="back" >
       <div class="fadeIn first"> 
-    <img src="../UserLogin/young-artiste-logo-white.png" id="icon" alt="User Icon" />
+    <img src="images/young-artiste-colored.png" id="icon" alt="SIFF Voting" />
     </div>
     <div class="first fadeIn third">
        <img src="images/3.png" alt="tick" width="100px" height="100px">
