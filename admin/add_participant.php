@@ -5,22 +5,18 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Add_Participant</title>
+	<title>SIFF | Add_Participant</title>
 </head>
-
-
 
 <?php include ('head.php');?>
 <?php include ('session.php');?>
 <body>
-
     <div id="wrapper">
         <!-- Navigation -->
         <?php include ('side_bar.php');?>
         <!-- Page Content -->
         <div id="page-wrapper">
-		<hr />
-                
+		<hr /> 
 				<div class="panel panel-default" style="border-color:white;">
 								<div class="panel-heading" style="margin-bottom:20px;margin-top:20px;">
 									<h4 class="modal-title" id="myModalLabel">         
@@ -28,9 +24,9 @@
 															<div class="panel-heading" style="background-color:#de9d4d;border-color:#de9d4d;">
 																Add Participant
 															</div> 
+									</h4>
 		</div> 
 		</div>
-			
 			<div class="modal-body">
 				<form onsubmit='sav()' method = "post" enctype = "multipart/form-data" >	
 					<div class="form-group">
@@ -40,7 +36,7 @@
 						<?php 
 											require '../DatabaseConnection/dbcon.php';
 											$bool = false;
-											$query = $conn->query("SELECT * FROM category ORDER BY category_id DESC");
+											$query = $conn->query("SELECT * FROM category ORDER BY category");
 												 while($row = $query->fetch_array()){
 													$category_id=$row['category_id'];
 										?>

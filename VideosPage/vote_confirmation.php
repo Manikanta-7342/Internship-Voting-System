@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="../ConfirmationPage/css/confi.css">
     <script src="https://kit.fontawesome.com/d7741372ca.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="https://competition.youngartiste.com/assets/img/siff.png">
-    <title> Vote Confirmation page</title>
-    
+    <title>SIFF | Vote Confirmation </title>
   </head>
   <body>
   <?php include("sess.php");?>
@@ -40,10 +39,8 @@
             <center>Are you sure you want to submit your Vote? </center>
         </p>
     </div>
-
     <div class="modal-footer">
         <center>
-            
             <a href="videos.php"><button class="btn2" >Back</button></a>
             <a href="../ConfirmationPage/confirmation.php?myVar=<?php echo $cat_id ?>" onclick="POST"><button class="btn1" type="submit" >Yes</button></a>
         </center>

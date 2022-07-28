@@ -18,7 +18,7 @@
    <!-- Icon -->
     <div class="back" >
     <div class="fadeIn first">    
-    <img src="images/young-artiste-white.png" id="icon" alt="User Icon" />
+    <img src="images/young-artiste-colored.png" id="icon" alt="User Icon" />
     </div>
     <div class="first fadeIn third">
        <img src="images/3.png" alt="tick" width="100px" height="100px">

@@ -6,8 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
-    <title>Category  </title>
+    <title>SIFF | Categories  </title>
   
 		<style>
 			body{
@@ -69,8 +68,8 @@ visibility: hidden;
 					<div id="main">
 						<div class="inner">
 							<header>
-								 <a  href="https://www.youngartiste.com"><img class="logo12345"src="image/young-artiste-white.png" style="width : 250px; height:auto; background-color: #e0ab68; position : relative; top: 50px;"></a>
-								 <p><img  class="flute1234" src="https://competition.youngartiste.com/assets/img/categories.png" alt="flute"></a></p>
+								 <a  href="../index.php"><img class="logo12345"src="image/young-artiste-colored.png" style="width : 250px; height:auto; position : relative; top: 50px;"></a>
+								 <pre>    <img  class="flute1234" src="https://competition.youngartiste.com/assets/img/categories.png" alt="flute"></a></pre>
 								 <p style="font-size:50px; position: relative; top:120px;">Select the category you want to vote from the list below:</p>
 							</header>
 							<section class="tiles">
@@ -97,7 +96,6 @@ visibility: hidden;
 						</div>
 					</div>
 			</div>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>

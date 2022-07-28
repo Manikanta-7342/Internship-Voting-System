@@ -5,11 +5,11 @@
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
-  background-image: url(../images/guitar.gif);
-  background-repeat: no-repeat;
+  /* background-image: url(../images/guitar.gif); */
+  /* background-repeat: no-repeat;
   background-position: left top;
   background-size: 600px 690px;
-  padding-left: 500px;
+  padding-left: 500px; */
   background-color: rgb(241,240,219);
 
 }
@@ -359,7 +359,7 @@ input[type=text]:placeholder {
   background-color: RoyalBlue;
 }
 
-@media print {
+/*@media print {
   body * {
     visibility: hidden;
   }
@@ -372,3 +372,4 @@ input[type=text]:placeholder {
     top: 0;
   }
 }
+*/

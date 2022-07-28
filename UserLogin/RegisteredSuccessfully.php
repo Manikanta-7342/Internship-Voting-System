@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="https://kit.fontawesome.com/d7741372ca.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="https://competition.youngartiste.com/assets/img/siff.png">
-    <title>RegisteredSuccessfully </title>
+    <title>SIFF | Registered </title>
   </head>
   <body>
     <div class="wrapper fadeInDown">
@@ -16,7 +16,7 @@
     <!-- Icon -->
     <div class="back" >
     <div class="fadeIn first"> 
-    <img src="Images/young-artiste-white.png" id="icon" alt="SIFF Voting" />
+    <img src="Images/young-artiste-colored.png" id="icon" alt="SIFF Voting" />
     </div>
     <div class="first fadeIn third">
        <img src="Images/3.png" alt="tick" width="100px" height="100px">
